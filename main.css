@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body {
+    background-color: #17171d; /* #222129 */
+    font-family: nunito;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: whitesmoke;
+}
+
+button {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+div.web-container {
+    width: 100%;
+    height: 100%;
+}
+
+div.mid-wrapper {
+    max-width: 1199; /* 1200px 62.5% */
+    
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    height: 65px;
+    line-height: 65px;
+
+    color: whitesmoke;
+    text-shadow: 1px 1px 1px black;
+    border-width: 1px;
+    border-bottom: 1px solid #b6bae5;
+    border-image: #b6bae5;/*linear-gradient(90deg, #b6bae500 0%, #b6bae5 50%, #b6bae500 100%) 1;*/
+    background-color: #222129;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.26);
+}
+
+.inner-header {
+    max-width: 1199;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+}
+
+header h1 {
+    position: absolute;
+    left: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+header h1 a:active {
+    color: rgb(167, 167, 167);
+}
+
+nav.header-ul {
+    display: inline-block; /* to define width relatively */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 800px;
+    overflow: hidden;
+}
+
+ul.header-list {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 700;
+    justify-content: center;
+}
+
+ul.header-list li.first-li {
+    padding-left: 30px;
+}
+
+ul.header-list li {
+    padding: 0px 15px;
+}
+
+ul.header-list li.last-li {
+    padding-right: 30px;
+}
+
+ul.header-list:hover li {
+    transition: .1s;
+    opacity: 0.5;
+}
+
+ul.header-list li:hover {
+    transition: .1s linear;
+    opacity: 1;
+}
+
+ul.profile-list {
+    display: flex;
+    position: absolute;
+    right: 0;
+    flex-wrap: wrap;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+ul.profile-list li {
+    padding-right: 0px;
+    position: relative;
+    cursor: pointer;
+    
+}
+
+li span.profile-arrow {
+    padding-left: 4px;
+    font-size: 16px;
+    color: whitesmoke;
+   
+}
+
+div.profile-dropdown {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+
+    width: 144px;
+    position: absolute;
+    right: 0;
+    /* margin-top: -1px;  so it overlaps under-header's border */
+    
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;    
+    border: 1px solid #b6bae5;
+    border-top: none;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0);
+   
+    background: #1e1d24;
+    background: linear-gradient(to bottom, #222129 0%, #1c1c24 90%);
+
+    opacity: 0;
+    visibility: hidden; /*this is needed, otherwise, the element will actually display, just without opacity */
+    transition: 0.1s linear;
+}
+
+ul.profile-list li:hover div.profile-dropdown {
+    opacity: 1;
+    visibility: visible; 
+}
+
+div.profile-dropdown a{
+    display: block;
+    border-radius: 2px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    width: 100%;
+    transition: .4s;
+}
+
+div.profile-dropdown a i {
+    padding-right: 10px;
+    font-size: 12px;
+}
+
+div.profile-dropdown a:hover {
+    background: #2f2e3a;
+    transition: .05s ease-out;
+}
+
+div.below-header {
+    height: 20px;
+    max-width: 820px;
+    background: #b6bae5;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    text-align: center;
+    line-height: 19px;
+    font-size: 14px;
+    margin: auto;
+    color: #222129;
+    font-weight: 600;
+    overflow: hidden;
+    text-shadow: 1px 0px 1px rgba(17, 17, 17, 0.247);
+}
+
+div.below-header a { font-weight: 600; color: #222129; transition: .1s linear;}
+
+div.body-wrapper {
+    padding: 20px;
+    color: whitesmoke;
+    text-shadow: 1px 1px black;
+    overflow: hidden;
+    word-wrap: break-word; /* not using this causes word overflowing */
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    min-width: 100%;
+    padding: 9px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.inner-footer {
+    width: 1200px;
+    font-size: 11px;
+    text-align: center;
+    color: whitesmoke;
+    font-weight: 300;
+    text-shadow: none;
+}
+
+nav.footer-ul {
+    margin: 0 auto;
+    display: inline-block;
+    margin-bottom: 2px;
+    
+}
+
+nav.footer-ul ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav.footer-ul li { padding-left: 20px; font-weight: 600;}
+nav.footer-ul li:first-child { padding-left: 0; }
+nav.footer-ul li a:hover { color: #b6bae5; transition: .2s;}
+div.copyright-footer { color: #a4a2b1; }

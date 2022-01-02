@@ -1,0 +1,121 @@
+div.title {
+    height: auto;
+    width: auto;
+    padding: 5px 0px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ccccff15;
+}
+
+section.seasonal-anime-wrapper {
+    max-height: 100%;
+    min-width: 60%;
+    max-width: 60%;
+    overflow: hidden;
+    border-radius: 3px;
+    /*border: 0px solid #b6bae5a1;
+    background-color: #222129; 
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.253);*/
+    padding: 10px;
+    
+}
+
+.img-wrapper {
+    display: flex;
+    overflow: hidden;
+}
+
+div.seasonal-anime {
+    width: 100px; /* 1000/8.5 = 117px */
+    height: 150px; /* 1500/8.5 = 176px */
+    border-radius: 5px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px 7px;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+
+div.seasonal-anime:first-child {margin-left: 0;}
+
+div.body-anime-desc {
+    position: absolute;
+    bottom: 0;
+    padding: 5px 0px;
+    width: 100%;
+    text-shadow: 1px 1px 1px black;
+    background: #17171d;
+    border-bottom: 3px solid #b6bae5;
+    opacity: 0;
+    font-size: 11px;
+    transition: .05s linear;
+}
+
+div.seasonal-anime:hover div.body-anime-desc {
+    opacity: 1;
+}
+
+section.right-side {
+    height: 100%;
+    min-width: 30%;
+    max-width: 30%;
+    border-radius: 2px;
+    margin-left: 20px;
+    overflow: hidden;
+    font-size: 14px;
+    border-radius: 3px;
+    /*border: 0px solid #b6bae5a1;
+    bakground-color: #222129;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.253);*/
+    padding: 10px;
+    
+}
+
+section.right-side p {
+    line-height: 1.6em;
+    text-shadow: 1px 1px 1px black;
+}
+
+section.right-side p span {
+    color: #b6bae5;
+    font-size: 13px;
+}
+
+div.activity {
+    width: 100%;
+    overflow: hidden;
+    max-height: 250px;
+    margin-top: 10px;
+    text-shadow: 0px 1px 1px black;
+}
+
+div.activity-entry {
+    padding: 0;
+    word-wrap: break-word;
+    overflow: hidden;
+    margin: 5px 10px 5px 0px;
+    border-radius: 2px;
+    text-overflow: ellipsis;
+}
+
+div.activity-entry:first-child {
+    margin-top: 0px;
+}
+
+div.activity-entry a {
+    color: #b6bae5;
+}
+
+div.activity-entry a:hover {
+    color: #b6bae5;
+    text-decoration: underline;
+}
+
+div.changelog-entry {
+    margin: 0px 5px;
+    font-size: 13px;
+    text-shadow: 1px 1px 1px black;
+}

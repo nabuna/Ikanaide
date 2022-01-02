@@ -1,0 +1,5 @@
+1. show images on the left when hovering a list entry
+2. make not to display the plus and minus symbols on the list when its MOVIE or OVA or whatever
+3. make an activity tab
+4. DONE | make the favorites tab
+5. make the reviews tab

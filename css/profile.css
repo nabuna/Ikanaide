@@ -1,0 +1,525 @@
+.body-wrapper {
+    justify-content: center;
+    margin-top: 7px;
+}
+
+div.profile-wrapper {
+    height: auto;
+    text-align: center;
+    max-width: 600px;
+    box-shadow: 0 0 3px rgba(0,0,0,.25);
+    
+}
+
+.profile-wrapper h2{
+    background-color: #222129;
+}
+
+.profile-wrapper img {
+    min-width: 170px;
+    max-width: 170px;
+}
+
+.body-wrapper svg{
+    justify-content: center;
+    fill: #fff;
+    transition: .1s ease-in-out;
+}
+
+svg {
+    filter: drop-shadow(0px 0px 1.2px #17171d);
+}
+
+section.profile-photo {
+    min-width: 600px;
+    min-height: 170px;
+    max-height: 600px;
+    overflow: hidden;
+
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: 13px;
+
+    display: flex;
+    justify-content: center;
+    z-index: 9999;
+    position: relative;
+}
+
+div.github-profile {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+div.twitter-profile {
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+section.profile-photo img {
+    border-radius: 50%;
+    /* border: 1px solid rgba(255, 255, 255, 0.116); */
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.26);
+    object-fit: cover; /* needed for the img to mantain it's aspect ratio while fitting on the div */
+    transition: .1s ease-in-out;
+}
+
+div.random-profile {
+    position: absolute;
+    right: 25%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+div.instagram-profile {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+section.profile-photo svg:hover {
+    /* fill: ; */
+    filter: drop-shadow(0px 0px 2px #eeeeee);
+}
+
+section.username-profile {
+    /* border-bottom: 1px solid #ccccff21; */
+    padding-bottom: 10px;
+    
+}
+
+section.username-profile h1 {
+    font-size: 30px;
+    display: none;
+}
+
+section.header-profile {
+    width: 100%;
+    
+}
+
+section.header-profile img {
+    max-width: 100%;
+    max-height: 200px; 
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    margin-top: -197px; /* im too lazy ok */
+}
+
+section.list-profile {
+    max-width: 100%;
+    background: #b6bae5;
+    color: #222129;
+    text-shadow: none;
+    font-weight: 700;
+    font-size: 15px;
+    
+    text-shadow: 1px 0px 1px rgba(17, 17, 17, 0.247);
+    text-align: center;
+    border-top: 1px solid;
+    border-image: #17171d; /* linear-gradient(90deg, rgb(0,0,0,0) 0%, #222129 50%, rgb(0,0,0,0) 100%) 1; */
+}
+
+section.list-profile ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section.list-profile li {
+    padding: 5px 19.4px; /* not sure how to equally divide space without doing this shit? */
+}
+
+section.list-profile button {
+    color: #222129;
+    transition: background-color .2s;
+}
+
+section.list-profile button:hover {
+    color: #222129;
+    background: #ced2ff;
+    cursor: pointer;
+}
+
+section.lists-wrapper {
+    max-width: 100%;
+    min-height: auto;
+    padding: 10px 15px;
+    padding-bottom: 0px;
+    border: 1px solid #b6bae5;
+    border-top: none;
+    text-shadow: 0px 1px 1px black;
+    text-align: left;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    
+    background-color: #222129;/*#1e1d2283 26252e*/
+}
+
+section.about-list {
+    
+    display: block; /* make it flex-direction: column on the media queries */
+    max-width: 100%;
+}
+
+section.anime-list {
+    display: block;
+}
+
+/** - currently not on use -
+
+.anime-ul {
+    display: none;
+}
+
+ul.anime-ul li {
+    height: 25px;
+    line-height: 40px;
+    margin: 0px -15px;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    transition: background .4s; /* to fade-in fastly and fade-out slowly 
+}
+
+ul.anime-ul li:first-child {
+    margin-top: -10px;
+}
+
+ul.anime-ul li:last-child {
+    margin-bottom: -10px;
+}
+
+ul.anime-ul li:hover {
+    background: #17171dcb;
+    transition: background .1s; /* to fade-in fastly and fade-out slowly 
+}
+
+*/
+
+div.first-row {
+    text-align: center;
+    max-width: 100%;
+    
+}
+
+div.description-profile {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div.username-profile-2 {
+    font-size: 25px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.781); 
+    display: block;
+    justify-content: center;
+    align-self: center;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+div.user-titles {
+    background-color: #17171d;
+    color: #b6bae5;
+    text-shadow: none;
+    border-radius: 200px;
+    font-size: 10px;
+    padding: 2px 6px;
+    margin: auto 10px;
+    font-weight: 800;
+}
+
+div.user-titles:last-child {
+    margin-left: -5px;
+}
+
+span.user-title-admin {
+    color: #eccbac;
+}
+
+div.about-cells {
+    display: flex;
+    justify-content: center;
+
+}
+
+div.about-desc {
+    min-width: 27%;
+    max-height: 100%;
+    padding: 5px;
+    border-radius: 7px;
+    overflow: hidden;
+    text-shadow: none;
+    text-align: left;
+    background-color: #b6bae5;
+    color: #17171d;
+    border: 2px solid #797c96;
+    margin: 10px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.253);
+}
+
+div.about-desc strong{
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
+}
+
+div.about-desc span {
+    color: rgb(29, 29, 37);
+    font-size: 14px;
+    font-weight: 600;
+    text-shadow: none;
+}
+
+div.anime-resume { 
+    font-size: 15px; 
+    font-weight: 300; 
+    line-height: 1.35em;
+    margin: 5px;
+    background-color: #b6bae5; 
+}
+
+div.anime-resume span:first-child {
+    margin-top: 10px;
+}
+
+div.list-wrapper-title {
+    font-weight: 700; 
+    background-color: #17171d;
+    color: rgb(233, 233, 233);
+    text-align: center;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    padding: 4px;
+    text-shadow: none;
+}
+
+section.about-list {display: block;} /* js assets */
+section.anime-list {display: none;}
+section.manga-list {display: none;}
+section.vn-list {display: none;}
+section.reviews-list {display: none;}
+section.favorites-list {display: none;}
+
+/* lists stuff now. */
+
+div.first-row-lists {
+    width: 100%;
+    display: flex;
+    margin: 0px -15px;
+    padding: 5px 15px;
+    font-size: 15px;
+    transition: .5s ease-out;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.lists-title { min-width: 60%;}
+.lists-score { min-width: 20%; text-align: center;}
+.lists-progress { min-width: 20%; text-align: center;}
+
+div.anime-name-profile-list {
+    width: 100%;
+    display: flex;
+    margin: 0px -15px;
+    padding: 5px 15px;
+    font-size: 15px;
+    transition: .5s ease-out;
+    position: relative;
+    align-items: center;
+}
+
+div.anime-name-profile-list:hover {
+    background-color: #17171dcb;
+    transition: .1s;
+    cursor: pointer;
+}
+
+div.anime-name-profile-list:first-child {
+    margin-top: -10px;
+}
+
+div.anime-name-profile-list:last-child {
+    margin-bottom: -10px;
+}
+
+div.left-image-lists {
+    position: absolute;
+    min-width: 100px;
+    min-height: 150px;
+    max-width: 100px;
+    max-height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+    left: -115;
+    bottom: -45; /* don't like this, but last child overflows otherwise */
+    opacity: 0;
+    visibility: hidden;
+}
+
+div.left-image-lists img {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    
+}
+
+.anime-name-profile-list:hover .left-image-lists{
+    opacity: 1;
+    visibility: visible;
+    
+}
+
+.titleoftheanime { min-width: 60%; }
+.scoreoftheanime { min-width: 20%; text-align: center; display: flex; align-items: center; justify-content: center;}
+.progressoftheanime {min-width: 20%; text-align: center; display: flex; align-items: center; justify-content: center;}
+
+.progressoftheanime button {display: none;}
+.progressoftheanime button:first-child {margin-left: 5px;}
+.progressoftheanime button:hover{color: rgb(193, 193, 255);}
+.progressoftheanime button:active {color: rgb(255, 255, 255);}
+.progressoftheanime button:last-child {margin-left: 8px;}
+div.progressoftheanime:hover button {display: block;}
+
+.under-animelist {
+    font-size: 11px;
+    font-weight: 300;
+    text-shadow: none;
+    color: #a4a2b1;
+    margin: 10px 0px 5px 0px;
+    text-align: center;
+}
+
+.favorites-wrapper {
+    border-radius: 7px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.favorites-entry-wrapper {
+    /* not having a min-width is important for div not breaking when padding declared */
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 0px;
+    justify-content: left;
+    border-radius: 7px;
+    width: 85%;
+}
+
+.favorites-title {
+    width: 10%;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: none;
+    margin-left: -10px; /* idk how to align a rotated item so w.e */
+}
+.favorites-title h4 {
+    transform: rotate(-90deg);
+}
+
+
+.favorites-img {
+    max-width: 70px; /* 1000/8.5 = 117px */
+    max-height: 103.44px; /* 1500/8.5 = 176px */
+    border-radius: 7px;
+    overflow: hidden;
+    text-align: center;
+    margin-right: 9.8px; /* max margin for the sixth element to not move down when zooming out */
+    margin-bottom: 9.8px;
+    transition: .5s;
+    position: relative;
+    background-color: #222129;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.233);
+}
+
+.favorites-img img { /* needed because other measures were asigned to img's before */
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    
+}
+
+.favorite-entry-desc {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    padding: 5px 0px;
+    z-index: 1;
+    background-color: #222129;
+    border-bottom: 3px solid #b6bae5;
+    opacity: 0;
+    font-size: 11px;
+}
+
+.favorites-img:hover .favorite-entry-desc {opacity: 1; transition: .1s}
+
+.reviews-list-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+}
+.review-wrapper {
+    display: flex;
+    min-width: 48%;
+    max-width: 48%;
+    margin-bottom: 10px;
+    background-color: #17171d;
+    box-shadow: 0px 0px 3px rgba(26, 26, 26, 0.26);
+    border-radius: 7px;
+    overflow: hidden;
+    border: .1px solid #2b2b4700;
+    transition: .2s;
+}
+
+.review-wrapper:hover {
+    border: 1px solid #b6bae5;
+    cursor: pointer;
+}
+
+.review-wrapper .favorites-img {
+    margin-bottom: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    margin-right: 0px;
+}
+
+.reviews-title {
+    padding: 10px;
+    font-size: 13px;
+}
+
+.reviews-title span.review-user a{color: #b6bae5;}
+.reviews-title span.review-user a:hover{text-decoration: underline;}
+
+.review-viewmore{
+    color: #ffffffa6;
+    
+    font-weight: 300;
+    font-size: 12px;
+    display: none;
+    transition: .2s linear;
+}
+
+.review-viewmore a {color: #ffffff8a; transition: .2s; text-shadow: none;}
+.review-viewmore a:hover {color: white;}
+.review-wrapper:hover .review-viewmore {display: block;}

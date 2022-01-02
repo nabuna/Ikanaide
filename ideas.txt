@@ -1,0 +1,14 @@
+home
+profile
+listas: anime/manga/visual novels/openings y endings
+pagina por anime: informacion básica, evolucion de ventas, articulos relacionados
+anichart (proximos animes)/index animes de año ordenados por más votados
+algo relacionado con grupos/watch parties/amino app
+placeholder img en la profile-picture
+not display items that havent been declared by the user
+linear-gradient en las listas, just as the dropdown menu
+quizas desarrollar la pestaña de comunidad de manera muy profunda, pero que se mantenga sencilla al principio al menos
+fecha de inicio y final de ver leer animemanga bla bla
+donation goal list like star citizens one
+un div a la izquierda de las listas que deje escoger entre completed, watching, etc., al scrollear, que se pegue al header maybe
+otro div a la derecha que si das click al div que contiene el titulo  (no al titulo en si) aparezca informacion del anime
