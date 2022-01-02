@@ -141,6 +141,7 @@ div.profile-dropdown {
     width: 144px;
     position: absolute;
     right: 0;
+    margin-top: -1px;
     /* margin-top: -1px;  so it overlaps under-header's border */
     
     border-bottom-left-radius: 2px;
@@ -154,7 +155,7 @@ div.profile-dropdown {
 
     opacity: 0;
     visibility: hidden; /*this is needed, otherwise, the element will actually display, just without opacity */
-    transition: 0.1s linear;
+    transition: 0.05s linear;
 }
 
 ul.profile-list li:hover div.profile-dropdown {
