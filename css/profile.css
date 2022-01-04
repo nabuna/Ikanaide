@@ -431,27 +431,8 @@ div.progressoftheanime:hover button {display: block;}
     transform: rotate(-90deg);
 }
 
-
-.favorites-img {
-    max-width: 70px; /* 1000/8.5 = 117px */
-    max-height: 103.44px; /* 1500/8.5 = 176px */
-    border-radius: 7px;
-    overflow: hidden;
-    text-align: center;
-    margin-right: 9.8px; /* max margin for the sixth element to not move down when zooming out */
-    margin-bottom: 9.8px;
-    transition: .5s;
-    position: relative;
-    background-color: #222129;
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.233);
-}
-
-.favorites-img img { /* needed because other measures were asigned to img's before */
-    min-width: 100%;
-    max-width: 100%;
-    min-height: 100%;
-    max-height: 100%;
-    
+div.review-wrapper {
+    min-width: 48%;
 }
 
 .favorite-entry-desc {
@@ -462,64 +443,10 @@ div.progressoftheanime:hover button {display: block;}
     padding: 5px 0px;
     z-index: 1;
     background-color: #222129;
-    border-bottom: 3px solid #b6bae5;
+    /* border-bottom: 3px solid #b6bae5; */
     opacity: 0;
     font-size: 11px;
 }
 
-.favorites-img:hover .favorite-entry-desc {opacity: 1; transition: .1s}
+.favorites-img:hover .favorite-entry-desc {opacity: 0.9; transition: .1s}
 
-.reviews-list-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 15px;
-    margin-left: 5px;
-    margin-right: 5px;
-    
-}
-.review-wrapper {
-    display: flex;
-    min-width: 48%;
-    max-width: 48%;
-    margin-bottom: 10px;
-    background-color: #17171d;
-    box-shadow: 0px 0px 3px rgba(26, 26, 26, 0.26);
-    border-radius: 7px;
-    overflow: hidden;
-    border: .1px solid #2b2b4700;
-    transition: .2s;
-}
-
-.review-wrapper:hover {
-    border: 1px solid #b6bae5;
-    cursor: pointer;
-}
-
-.review-wrapper .favorites-img {
-    margin-bottom: 0px;
-    border-bottom-right-radius: 0px;
-    border-top-right-radius: 0px;
-    margin-right: 0px;
-}
-
-.reviews-title {
-    padding: 10px;
-    font-size: 13px;
-}
-
-.reviews-title span.review-user a{color: #b6bae5;}
-.reviews-title span.review-user a:hover{text-decoration: underline;}
-
-.review-viewmore{
-    color: #ffffffa6;
-    
-    font-weight: 300;
-    font-size: 12px;
-    display: none;
-    transition: .2s linear;
-}
-
-.review-viewmore a {color: #ffffff8a; transition: .2s; text-shadow: none;}
-.review-viewmore a:hover {color: white;}
-.review-wrapper:hover .review-viewmore {display: block;}

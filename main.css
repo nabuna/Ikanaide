@@ -196,9 +196,14 @@ div.below-header {
     font-weight: 600;
     overflow: hidden;
     text-shadow: 1px 0px 1px rgba(17, 17, 17, 0.247);
+    display: block;
 }
 
-div.below-header a { font-weight: 600; color: #222129; transition: .1s linear;}
+div.below-header a {
+    font-weight: 600; 
+    color: #222129; 
+    transition: .1s linear;
+}
 
 div.body-wrapper {
     padding: 20px;
@@ -242,4 +247,91 @@ nav.footer-ul ul {
 nav.footer-ul li { padding-left: 20px; font-weight: 600;}
 nav.footer-ul li:first-child { padding-left: 0; }
 nav.footer-ul li a:hover { color: #b6bae5; transition: .2s;}
-div.copyright-footer { color: #a4a2b1; }
+div.copyright-footer { color: #a4a2b1;}
+
+/* pasted from profile cause needed on home, a general namechange for the tags is needed */
+
+.favorites-img {
+    min-width: 70px;
+    max-width: 70px; /* 1000/8.5 = 117px */
+    max-height: 103.44px; /* 1500/8.5 = 176px */
+    border-radius: 7px;
+    overflow: hidden;
+    text-align: center;
+    margin-right: 9.8px; /* max margin for the sixth element to not move down when zooming out */
+    margin-bottom: 9.8px;
+    transition: .5s;
+    position: relative;
+    background-color: #222129;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.233);
+}
+
+.favorites-img img { /* needed because other measures were asigned to img's before */
+    min-width: 100%!important;
+    max-width: 100%!important;
+    min-height: 100%;
+    max-height: 100%;
+}
+
+.reviews-list-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+}
+
+.review-wrapper {
+    display: flex;
+    min-width: 40%;
+    max-width: 40%;
+    max-height: 103.44px;
+    margin-bottom: 10px;
+    background-color: #17171d;
+    box-shadow: 0px 0px 3px rgba(26, 26, 26, 0.26);
+    border-radius: 7px;
+    overflow: hidden;
+    border: .1px solid #2b2b4700;
+    transition: .2s;
+}
+
+.review-name {
+    font-weight: 600;
+}
+
+.review-wrapper:hover {
+    border: 1px solid #b6bae5;
+    cursor: pointer;
+}
+
+.review-wrapper .favorites-img {
+    margin-bottom: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    margin-right: 0px;
+}
+
+.reviews-title {
+    padding: 10px;
+    font-size: 13px;
+}
+
+.reviews-title span.review-user a{color: #b6bae5;}
+.reviews-title span.review-user a:hover{text-decoration: underline;}
+
+.review-viewmore{
+    color: #ffffffa6;
+    
+    font-weight: 300;
+    font-size: 12px;
+    display: none;
+    transition: .2s linear;
+}
+
+.review-viewmore a {color: #ffffff8a; transition: .2s; text-shadow: none;}
+.review-viewmore a:hover {color: white;}
+.review-wrapper:hover .review-viewmore {display: block;}
+
+/* ............... */
