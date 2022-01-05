@@ -16,4 +16,4 @@ I really have no clue about this for now, since I never run a project like this,
 I don't like ads and don't develop this for money at all.
 
 # Expected release date
-I'm quite ambitious on the quality of the project, so an exact date is hard to say, but I hope I can do it by the end of summer 2022.
+I'm quite ambitious on the quality of the project, so an exact date is hard to say, but I hope I can make it by the end of summer 2022.
