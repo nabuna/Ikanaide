@@ -75,7 +75,8 @@ nav.header-ul {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    min-width: 800px;
+    min-width: 66.72%;
+    max-height: 65px;
     overflow: hidden;
 }
 
@@ -156,6 +157,8 @@ div.profile-dropdown {
     opacity: 0;
     visibility: hidden; /*this is needed, otherwise, the element will actually display, just without opacity */
     transition: 0.05s linear;
+
+    z-index: 727;
 }
 
 ul.profile-list li:hover div.profile-dropdown {
@@ -295,6 +298,7 @@ div.copyright-footer { color: #a4a2b1;}
     overflow: hidden;
     border: .1px solid #2b2b4700;
     transition: .2s;
+    box-sizing: border-box;
 }
 
 .review-name {
