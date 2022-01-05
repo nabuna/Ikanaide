@@ -4,7 +4,8 @@ Ikanaide is a community-oriented website focused on the japanese culture that en
 It's currently under development, on it's early stage. Only the frontend is being worked at the moment; as I am designing the website at the same time as I'm coding it, I don't want to add a backend I won't use in the end, so that's for the later.
 
 # Current plans
-Even though a great individual experience is guaranteed, the main idea for this website is to **really** focus on community aspects. I want it to be a place where people can have a good time and they can reflect their thoughts on the genre throught multiple tools that are meant to be implement in the future. 
+Even though a great individual experience is guaranteed, the main idea for this website is to **really** focus on community aspects. 
+I want it to be a place where people can have a good time and they can reflect their thoughts on the genre throught multiple tools that are meant to be implement in the future. 
 The website will also be constantly open of ears to public criticism and proposals.
 
 # Fundation
