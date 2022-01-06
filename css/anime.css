@@ -1,0 +1,49 @@
+.anime-container {
+    width: 100%;
+    display: flex;
+    background-color: red;
+    justify-content: center;
+}
+
+div.anime-info {
+    max-height: 100%;
+    max-width: 65%;
+    max-width: 65%;
+    background-color: blue;
+    box-sizing: border-box;
+    display: flex;
+}
+
+div.anime-info-cover {
+    min-width: 142.85px;
+    min-height: 214,28;
+    max-width: 142.85px;
+    max-height: 214,28;
+    overflow: hidden;
+}
+
+div.anime-info-cover img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+div.anime-info-background {
+    max-height: 150px;
+    max-width: 600px;
+    min-height: 150px;
+    min-width: 600px;
+    overflow: hidden;
+}
+
+div.anime-info-background img {
+    max-width: 100%; /*  */
+}
+
+
+
+
+div.anime-data {
+    min-width: 35%;
+    max-width: 35%;
+    background-color: green;
+}

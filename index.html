@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="css/home.css">
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="css/fontawesome-free-5.15.4-web/css/all.css">
-        <title>Ikanaide</title>
+        <title>Home · Ikanaide</title>
     </head>
     <body>
         <script>0</script>
@@ -26,8 +26,8 @@
                 </nav>
                 <div class="profile">
                     <ul class="profile-list">
-                        <li>nabunafge <span class="profile-arrow"><i class="fas fa-caret-down"></i></span>
-                            <div class="profile-dropdown" id="profile-dropdown">
+                        <li onclick="profileDropdownToggle('toggle');">nabunafge <span class="profile-arrow"><i class="fas fa-caret-down"></i></span>
+                            <div id="profile_dropdown" class="profile-dropdown" id="profile-dropdown">
                                 <a href="sub/profile.html"><i class="fas fa-user"></i>Profile</a>
                                 <a href="#"><i class="fas fa-envelope"></i>Notifications</a>
                                 <a href="#"><i class="fas fa-user-friends"></i>Friends</a>
@@ -37,6 +37,26 @@
                             </div>
                         </li>
                     </ul>
+
+                    <script language="JavaScript">
+
+                        let profileDropdown = document.getElementById('profile_dropdown');
+            
+                        function profileDropdownToggle(id) {
+                            switch(id) {
+                                case 'toggle':
+                                if (profileDropdown.style.opacity == "0" && profileDropdown.style.visibility == "hidden") {
+                                    profileDropdown.style.opacity = "1"
+                                    profileDropdown.style.visibility = "visible"
+                                } else {
+                                    profileDropdown.style.opacity = "0"
+                                    profileDropdown.style.visibility = "hidden"
+                                }
+                            }
+                        }
+            
+                    </script>
+
                 </div>
                 </div>
             </header>
@@ -49,39 +69,39 @@
                         <div class="title"><h3>Seasonal Anime</h3></div>
                         <div class="img-wrapper">
                             <a href="#"><div class="seasonal-anime">
-                                <img src="img/gintama.webp" alt="" height="100%" class="first-img">
+                                <img src="img/gintama.webp" alt="" class="first-img">
                                 <div class="body-anime-desc"><p>Gintama</p></div>
                             </div></a>
                             <a href="#"><div class="seasonal-anime">
-                                <img src="img/madoka.webp" alt="" height="100%">
+                                <img src="img/madoka.webp" alt="">
                                 <div class="body-anime-desc">Madoka Magica</div>
                             </div></a>
                             <a href="#"><div class="seasonal-anime">
-                                <img src="img/evangelion.jpg" alt="" height="100%">
+                                <img src="img/evangelion.jpg" alt="">
                                 <div class="body-anime-desc">Evangelion</div>
                             </div></a>
                             <a href="#"><div class="seasonal-anime">
-                                <img src="img/clannad.jpg" alt="" height="100%">
+                                <img src="img/clannad.jpg" alt="">
                                 <div class="body-anime-desc">Clannad: After Story</div>
                             </div></a>
                             <a href="#"><div class="seasonal-anime">
-                                <img src="img/violet.webp" alt="" height="100%">
+                                <img src="img/violet.webp" alt="">
                                 <div class="body-anime-desc">Violet Evergarden</div>
                             </div></a>
                             <a href="#"><div class="seasonal-anime">
-                                <img src="img/hxh.jpg" alt="" height="100%">
+                                <img src="img/hxh.jpg" alt="">
                                 <div class="body-anime-desc">Hunter x Hunter</div>  
                             </div></a>
                             <a href="#"><div class="seasonal-anime">
-                                <img src="img/nhk.webp" alt="" height="100%">
+                                <img src="img/nhk.webp" alt="">
                                 <div class="body-anime-desc">NHK Ni Youkoso</div>
                             </div></a>
                             <a href="#"><div class="seasonal-anime">
-                                <img src="img/kuzu.jpg" alt="" height="100%">
+                                <img src="img/kuzu.jpg" alt="">
                                 <div class="body-anime-desc">Kara no Kyoukai 5: Mujun Rasen</div>
                             </div></a>
                             <a href="#"><div class="seasonal-anime">
-                                <img src="img/knk.jpg" alt="" height="100%">
+                                <img src="img/knk.jpg" alt="">
                                 <div class="body-anime-desc">Fate Heavens Feel III</div>
                             </div></a>
                         </div>
@@ -89,39 +109,39 @@
                         <div class="title"><h3>Seasonal Manga</h3></div>
                         <div class="img-wrapper">
                             <a href="#"><div class="seasonal-anime">
-                                <img src="img/shingeki.webp" alt="" height="100%" class="first-img">
+                                <img src="img/shingeki.webp" alt="">
                                 <div class="body-anime-desc"><p>Shingeki no Kyojin</p></div>
                             </div></a>
                             <a href="#"><div class="seasonal-anime">
-                                <img src="img/berserk.jpg" alt="" height="100%">
+                                <img src="img/berserk.jpg" alt="">
                                 <div class="body-anime-desc">Berserk</div>
                             </div></a>
                             <a href="#"><div class="seasonal-anime">
-                                <img src="img/vinland.jpeg" alt="" height="100%">
+                                <img src="img/vinland.jpeg" alt="">
                                 <div class="body-anime-desc">Vinland Saga</div>
                             </div></a>
                             <a href="#"><div class="seasonal-anime">
-                                <img src="img/chainsaw.jpg" alt="" height="100%">
+                                <img src="img/chainsaw.jpg" alt="">
                                 <div class="body-anime-desc">Chainsaw Man</div>
                             </div></a>
                             <a href="#"><div class="seasonal-anime">
-                                <img src="img/opm.jpg" alt="" height="100%">
+                                <img src="img/opm.jpg" alt="">
                                 <div class="body-anime-desc">One Punch Man</div>
                             </div></a>
                             <a href="#"><div class="seasonal-anime">
-                                <img src="img/one_piece.webp" alt="" height="100%">
+                                <img src="img/one_piece.webp" alt="">
                                 <div class="body-anime-desc">One Piece</div>
                             </div></a>
                             <a href="#"><div class="seasonal-anime">
-                                <img src="img/punpun.jpg" alt="" height="100%">
+                                <img src="img/punpun.jpg" alt="">
                                 <div class="body-anime-desc">Oyasumi Punpun</div>
                             </div></a>
                             <a href="#"><div class="seasonal-anime">
-                                <img src="img/jjk.webp" alt="" height="100%">
+                                <img src="img/jjk.webp" alt="">
                                 <div class="body-anime-desc">Jujutsu Kaisen</div>
                             </div></a>
                             <a href="#"><div class="seasonal-anime">
-                                <img src="img/kny.jpg" alt="" height="100%">
+                                <img src="img/kny.jpg" alt="">
                                 <div class="body-anime-desc">Kimetsu no Yaiba</div>
                             </div></a>
                         </div>

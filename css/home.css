@@ -29,8 +29,7 @@ section.seasonal-anime-wrapper {
 div.seasonal-anime {
     width: 100px; /* 1000/8.5 = 117px */
     height: 150px; /* 1500/8.5 = 176px */
-    border-radius: 5px;
-    overflow: hidden;
+    border-radius: 7px;
     display: flex;
     flex-wrap: wrap;
     margin: 5px 7px;
@@ -41,11 +40,19 @@ div.seasonal-anime {
 
 div.seasonal-anime:first-child {margin-left: 0;}
 
+div.seasonal-anime img {
+    border-radius: 7px;
+    min-height: 100%;
+    min-width: 100%;
+    max-height: 100%;
+    max-width: 100%;
+}
+
 div.body-anime-desc {
+    min-width: 100%;
     position: absolute;
     bottom: 0;
     padding: 5px 0px;
-    width: 100%;
     text-shadow: 1px 1px 1px black;
     background: #222129;
     /* border-bottom: 1px solid #b6bae5; */

@@ -195,7 +195,7 @@ div.below-header {
     line-height: 19px;
     font-size: 14px;
     margin: auto;
-    color: #222129;
+    color: #17171d;
     font-weight: 600;
     overflow: hidden;
     text-shadow: 1px 0px 1px rgba(17, 17, 17, 0.247);
@@ -259,7 +259,7 @@ div.copyright-footer { color: #a4a2b1;}
     max-width: 70px; /* 1000/8.5 = 117px */
     max-height: 103.44px; /* 1500/8.5 = 176px */
     border-radius: 7px;
-    overflow: hidden;
+    /* overflow: hidden; */
     text-align: center;
     margin-right: 9.8px; /* max margin for the sixth element to not move down when zooming out */
     margin-bottom: 9.8px;

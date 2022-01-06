@@ -26,8 +26,8 @@
                 </nav>
                 <div class="profile">
                     <ul class="profile-list">
-                        <li>nabunafge <span class="profile-arrow"><i class="fas fa-caret-down"></i></span>
-                            <div class="profile-dropdown" id="profile-dropdown">
+                        <li onclick="profileDropdownToggle('toggle');">nabunafge <span class="profile-arrow"><i class="fas fa-caret-down"></i></span>
+                            <div id="profile_dropdown" class="profile-dropdown" id="profile-dropdown">
                                 <a href="#"><i class="fas fa-user"></i>Profile</a>
                                 <a href="#"><i class="fas fa-envelope"></i>Notifications</a>
                                 <a href="#"><i class="fas fa-user-friends"></i>Friends</a>
@@ -37,6 +37,26 @@
                             </div>
                         </li>
                     </ul>
+                    
+                    <script language="JavaScript">
+
+                        let profileDropdown = document.getElementById('profile_dropdown');
+
+                        function profileDropdownToggle(id) {
+                            switch(id) {
+                                case 'toggle':
+                                if (profileDropdown.style.opacity == "0" && profileDropdown.style.visibility == "hidden") {
+                                    profileDropdown.style.opacity = "1"
+                                    profileDropdown.style.visibility = "visible"
+                                } else {
+                                    profileDropdown.style.opacity = "0"
+                                    profileDropdown.style.visibility = "hidden"
+                                }
+                            }
+                        }
+
+                    </script>
+
                 </div>
                 </div>
             </header>
@@ -403,6 +423,13 @@
                         break;
                 }
             }
+
+        </script>
+
+        <script language="JavaScript">
+
+            
+
         </script>
     </body>
 </html>

@@ -414,8 +414,15 @@ div.progressoftheanime:hover button {display: block;}
     flex-wrap: wrap;
     padding-right: 0px;
     justify-content: left;
-    border-radius: 7px;
     width: 85%;
+}
+
+.favorites-entry-wrapper img {
+    border-radius: 7px;
+    min-height: 100%;
+    min-width: 100%;
+    max-height: 100%;
+    max-width: 100%;
 }
 
 .favorites-title {
