@@ -142,7 +142,7 @@ div.profile-dropdown {
     width: 144px;
     position: absolute;
     right: 0;
-    margin-top: -1px;
+    margin-top: 0px;
     /* margin-top: -1px;  so it overlaps under-header's border */
     
     border-bottom-left-radius: 2px;
@@ -161,6 +161,8 @@ div.profile-dropdown {
     z-index: 727;
 }
 
+
+
 ul.profile-list li:hover div.profile-dropdown {
     opacity: 1;
     visibility: visible; 
@@ -173,6 +175,11 @@ div.profile-dropdown a{
     border-top-right-radius: 0;
     width: 100%;
     transition: .4s;
+}
+
+div.profile-dropdown a:first-child {
+    margin-top: -1px;
+    background-color: #222129;
 }
 
 div.profile-dropdown a i {
