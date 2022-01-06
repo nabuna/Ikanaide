@@ -1,49 +1,177 @@
 .anime-container {
-    width: 100%;
+    min-width: 1056px;
     display: flex;
-    background-color: red;
     justify-content: center;
+    overflow: hidden;
 }
 
 div.anime-info {
     max-height: 100%;
     max-width: 65%;
     max-width: 65%;
-    background-color: blue;
+    padding: 10px;
+
+    background-color: #222129;
+    
     box-sizing: border-box;
     display: flex;
+    
+    border-radius: 3px;
 }
 
 div.anime-info-cover {
-    min-width: 142.85px;
-    min-height: 214,28;
-    max-width: 142.85px;
-    max-height: 214,28;
+    min-width: 19.75%; /* 142.85px */
+    max-width: 19.75%;
+    
     overflow: hidden;
 }
 
 div.anime-info-cover img {
     max-width: 100%;
-    max-height: 100%;
+    min-height: 217.5px; 
+    border-radius: 3px;
+}
+
+div.anime-info-content {
+    max-width: 78.87%; /* 578.83px */
+    min-width: 78.87%;
+    margin-left: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+    
+    border-radius: 3px;
 }
 
 div.anime-info-background {
-    max-height: 150px;
-    max-width: 600px;
+    max-height: 195px;
     min-height: 150px;
-    min-width: 600px;
     overflow: hidden;
 }
 
 div.anime-info-background img {
-    max-width: 100%; /*  */
+    max-width: 100%;
+    border-radius: 3px;
+}
+
+
+div.anime-info-cover-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.anime-info-cover-desc-userstatus {
+    margin-top: 10px;
+    font-size: 14px;
+    padding: 5px 0px;
+    min-width: 100%;
+    
+    text-align:center;
+
+    border-radius: 5px;
+    background-color: #17171d;
+    border: 1px solid #17171d;
+}
+
+div.anime-info-cover-desc-userstatus:hover {
+    min-width: 98%; /* so left and right's border don't break */
+    border: 1px solid #b6bae5;
+    cursor: pointer;
+}
+
+div.anime-info-cover-desc-favorite {
+    margin-top: 10px;
+    font-size: 14px;
+    padding: 4.5px 0px;
+    min-width: 100%;
+    
+    text-align:center;
+
+    border-radius: 5px;
+    background-color: #bc3873d3;
+    border: 1px solid #bc387300;
+}
+
+div.anime-info-cover-desc-favorite i {
+    font-size: 13px;
+    margin-right: 7px;
+    text-shadow: none;
+}
+
+div.anime-info-cover-desc-favorite:hover {
+    min-width: 98%; /* so left and right's border don't break */
+    border: 1px solid #b6bae5;
+    cursor: pointer;
+}
+
+div.anime-info-cover-desc-score {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100%;
+}
+
+
+div.anime-score {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+div.anime-info-desc {
+    margin: 10px;
+}
+
+div.anime-info-desc-title {
+    border-bottom: 1px solid #ccccff15;
+}
+
+div.anime-info-desc-title-season {
+    float: right;
+}
+
+div.anime-info-desc-desc {
+    margin: 10px 0px;
+    font-size: 13px;
 }
 
 
 
 
 div.anime-data {
-    min-width: 35%;
-    max-width: 35%;
-    background-color: green;
+    min-width: 25%;
+    max-width: 25%;
+    background-color: #222129;
+    padding: 15px 0px;
+    margin-left: 10px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+}
+
+div.anime-data-wrapper {
+    margin: 0 auto;
+    min-width: 90%;
+    max-width: 90%;
+}
+
+div.anime-data-title {
+    min-width: 100%;
+    border-bottom: 1px solid #ccccff15;
+    font-size: 15px;
+}
+
+div.anime-data-info {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+div.anime-data-info li:first-child {margin-top: none;}
+div.anime-data-info li:last-child {margin-bottom: none;}
+div.anime-data-info li {
+    margin: 5px 0px;
 }
