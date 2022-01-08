@@ -4,8 +4,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/x-icon" href="../img/ico/test1.png">
         <link rel="stylesheet" href="../main.css">
+        <link rel="stylesheet" href="../css/anime.css">
         <link rel="stylesheet" href="../css/fontawesome-free-5.15.4-web/css/all.css">
-        <title>ikanaide.com - Manga</title>
+        <title>ikanaide.com · Manga</title>
     </head>
     <body>
         <script>0</script>
@@ -25,9 +26,9 @@
                 </nav>
                 <div class="profile">
                     <ul class="profile-list">
-                        <li>nabunafge <span class="profile-arrow"><i class="fas fa-caret-down"></i></span>
-                            <div class="profile-dropdown" id="profile-dropdown">
-                                <a href="#"><i class="fas fa-user"></i>Profile</a>
+                        <li  onclick="profileDropdownToggle('toggle');">nabunafge <span class="profile-arrow"><i class="fas fa-caret-down"></i></span>
+                            <div  id="profile_dropdown" class="profile-dropdown">
+                                <a href="../sub/profile.html"><i class="fas fa-user"></i>Profile</a>
                                 <a href="#"><i class="fas fa-envelope"></i>Notifications</a>
                                 <a href="#"><i class="fas fa-user-friends"></i>Friends</a>
                                 <a href="#"><i class="fas fa-envelope"></i>Messages (<span id="messages-number">2</span>)</a>
@@ -36,11 +37,148 @@
                             </div>
                         </li>
                     </ul>
+
+                    <script language="JavaScript">
+
+                        let profileDropdown = document.getElementById('profile_dropdown');
+
+                        function profileDropdownToggle(id) {
+                            switch(id) {
+                                case 'toggle':
+                                if (profileDropdown.style.opacity == "0" && profileDropdown.style.visibility == "hidden") {
+                                    profileDropdown.style.opacity = "1"
+                                    profileDropdown.style.visibility = "visible"
+                                } else {
+                                    profileDropdown.style.opacity = "0"
+                                    profileDropdown.style.visibility = "hidden"
+                                }
+                            }
+                        }
+
+                    </script>
+                    
                 </div>
                 </div>
             </header>
             <div class="mid-wrapper">
-                <div class="below-header"><a href="../index.html">Ikanaide is officially up and running! the web is still in beta-access, new features are coming in the near future, so stay tunned!</div>
+                <div class="below-header"><a href="../index.html">Ikanaide is officially up and running! the web is still in beta-access, new features are coming in the near future, so stay tunned!</a></div>
+                <div class="body-wrapper">
+                    <div class="anime-container">
+
+                        <div class="anime-info">
+                            <div class="anime-info-cover">
+                                <img src="../img/punpun.jpg" alt="Gintama">
+                                <div class="anime-info-cover-desc">
+                                    <div class="anime-info-cover-desc-userstatus">
+                                        Add to List
+                                    </div>
+                                    <div class="anime-info-cover-desc-favorite">
+                                        <i class="fas fa-heart"></i>Favorite
+                                    </div>
+                                    <div class="anime-info-cover-desc-score">
+                                        <div class="anime-info-cover-desc-score-title">Score</div>
+                                        <div id="anime-score "class="anime-score">9.05</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                            <div class="anime-info-content">
+                                <div class="anime-info-background">
+                                    <img src="../img/punpun-header.png" alt="Gintama">
+                                </div>
+                                <div class="anime-info-desc">
+                                    <div class="anime-info-desc-title"><h1>Oyasumi Punpun</h1></div>
+                                    <div class="anime-info-desc-desc"><p>
+                                        Punpun Onodera is a normal 11-year-old boy living in Japan. Hopelessly idealistic and romantic, Punpun begins to see his life take a subtle—though nonetheless startling—turn to the adult when he meets the new girl in his class, Aiko Tanaka. It is then that the quiet boy learns just how fickle maintaining a relationship can be, and the surmounting difficulties of transitioning from a naïve boyhood to a convoluted adulthood. When his father assaults his mother one night, Punpun realizes another thing: those whom he looked up to were not as impressive as he once thought.
+                                        <br><br>
+                                        As his problems increase, Punpun's once shy demeanor turns into voluntary reclusiveness. Rather than curing him of his problems and conflicting emotions, this merely intensifies them, sending him down the dark path of maturity in this grim coming-of-age saga.
+                                        <br><br>
+                                        Source: MAL
+                                    </p></div>
+
+                                    <div class="characters-wrapper">
+                                        
+                                        <div class="characters-wrapper-title"><h4>Characters</h4></div>
+                                        <div class="characters-wrapper-content">
+
+                                            <div class="characters-wrapper-entry">
+                                                <div class="characters-wrapper-entry-photo"><img src="../img/characters/punpun.jpg" alt=""></div>
+                                                <div class="characters-wrapper-entry-desc">
+                                                    <div class="characters-wrapper-entry-desc-name">Onodera, Punpun</div>
+                                                    <div class="characters-wrapper-entry-desc-role">Main Character</div>
+                                                </div>
+                                            </div>
+                                            <div class="characters-wrapper-entry">
+                                                <div class="characters-wrapper-entry-photo"><img src="../img/characters/aiko.jpg" alt=""></div>
+                                                <div class="characters-wrapper-entry-desc">
+                                                    <div class="characters-wrapper-entry-desc-name">Tanaka, Aiko</div>
+                                                    <div class="characters-wrapper-entry-desc-role">Main Character</div>
+                                                </div>
+                                            </div>
+                                            <div class="characters-wrapper-entry">
+                                                <div class="characters-wrapper-entry-photo"><img src="../img/characters/sachi.jpg" alt=""></div>
+                                                <div class="characters-wrapper-entry-desc">
+                                                    <div class="characters-wrapper-entry-desc-name">Nanjou, Sachi</div>
+                                                    <div class="characters-wrapper-entry-desc-role">Supporting</div>
+                                                </div>
+                                            </div>
+                                            
+
+                                        </div>
+                                    </div>
+
+                                    <div class="characters-wrapper">
+                                        
+                                        <div class="characters-wrapper-title"><h4>Staff</h4></div>
+                                        <div class="characters-wrapper-content">
+
+                                            <div class="characters-wrapper-entry">
+                                                <div class="characters-wrapper-entry-photo"><img src="../img/people/4.jpg" alt=""></div>
+                                                <div class="characters-wrapper-entry-desc">
+                                                    <div class="characters-wrapper-entry-desc-name">Asano, Inio</div>
+                                                    <div class="characters-wrapper-entry-desc-role">Story and Art</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="anime-data">
+                            <div class="anime-data-wrapper">
+                                <div class="anime-data-title"><h1>Information</h1></div>
+                                <div class="anime-data-info">
+                                    <ul>
+                                        <li><strong>Type:</strong> Manga<span></span></li>
+                                        <li><strong>Volumes:</strong> 13<span></span></li>
+                                        <li><strong>Chapters:</strong> 144<span></span></li>
+                                        <li><strong>Status:</strong> Finished<span></span></li>
+                                        <li><strong>Start Date:</strong> Mar 15, 2007<span></span></li>
+                                        <li><strong>End Date:</strong> Nov 2, 2013<span></span></li>
+                                        <li><strong>Season:</strong> Winter 2022 <span></span></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="anime-data-wrapper">
+                                <div class="anime-data-title"><h1>Community</h1></div>
+                                <div class="anime-data-info">
+                                    <ul>
+                                        <li><strong>Members:</strong> <span id="members">8.284</span></li>
+                                        <li><strong>Favorites:</strong> <span id="favorites">945</span></li>
+                                        <li><strong>Ranked:</strong> <span id="ranked-place">#1</span></li>
+                                        <li><strong>Popularity:</strong> <span id="popularity">#20</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>   
     </body>

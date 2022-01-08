@@ -9,7 +9,7 @@ div.anime-info {
     max-height: 100%;
     max-width: 65%;
     max-width: 65%;
-    padding: 10px;
+    padding: 10px 10px 0px 10px;
 
     background-color: #222129;
     
@@ -113,8 +113,21 @@ div.anime-info-cover-desc-score {
     flex-direction: column;
     align-items: center;
     min-width: 100%;
+    
 }
 
+div.anime-info-cover-desc-info {
+    text-align: left;
+    width: 98%;
+    font-size: 13px;
+    margin: 7px 0px;
+    padding: 5px 0px;
+    border-radius: 5px;
+    
+    line-height: 1.5em;
+}
+
+div.anime-info-cover-desc-info li {margin-left: 5px;}
 
 div.anime-score {
     font-size: 24px;
@@ -137,6 +150,73 @@ div.anime-info-desc-title-season {
 div.anime-info-desc-desc {
     margin: 10px 0px;
     font-size: 13px;
+
+    border-bottom: 1px solid #ccccff15;
+    padding-bottom: 5px;
+}
+
+div.characters-wrapper {
+    margin-bottom: 15px;
+}
+
+div.characters-wrapper-content {
+    display: flex;
+    max-height: 65px;
+    margin-left: -1px; /* because entries have a border of 1px */
+    justify-content: space-between;
+    
+}
+
+div.characters-wrapper-title {
+    margin-bottom: 5px;
+}
+
+div.characters-wrapper-entry {
+    background-color: #17171d;
+    display: flex;
+    min-width: 32%; /* 32% */
+    max-width: 271.63px; /* 50% */
+    min-height: 60px;
+    max-height: 60px; /* 1500/25 */
+    border-radius: 7px;
+    overflow: hidden;
+    border: 1px solid #222129;
+    transition: .1s;
+
+    margin-right: 10px;
+}
+
+div.characters-wrapper-entry:last-child {margin-right: 0px;}
+
+div.characters-wrapper-entry:hover {
+    border: 1px solid #b6bae5;
+    cursor: pointer;
+}
+
+
+div.characters-wrapper-entry-photo img{
+    max-height: 100%;
+    max-width: 40px;
+}
+
+div.characters-wrapper-entry-desc {
+    font-size: 12px;
+    overflow: hidden;
+    position: relative;
+    color: whitesmoke;
+    text-shadow: none;
+    width: 100%;
+}
+
+div.characters-wrapper-entry-desc-name {
+    margin: 5px;
+    padding-right: 10px;
+}
+
+div.characters-wrapper-entry-desc-role {
+    margin: 5px;
+    position: absolute; /* should be a better way to do this. using absolute position on characters-wrapper-entry-desc-name makes characters-wrapper-entry not scalable. */
+    bottom: 0;
 }
 
 
@@ -157,12 +237,15 @@ div.anime-data-wrapper {
     margin: 0 auto;
     min-width: 90%;
     max-width: 90%;
+    margin-top: 5px;
 }
+
+div.anime-data-wrapper:first-child {margin-top: 0px;}
 
 div.anime-data-title {
     min-width: 100%;
     border-bottom: 1px solid #ccccff15;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 div.anime-data-info {
@@ -174,4 +257,12 @@ div.anime-data-info li:first-child {margin-top: none;}
 div.anime-data-info li:last-child {margin-bottom: none;}
 div.anime-data-info li {
     margin: 5px 0px;
+}
+
+.anime-data-info ul li span {
+    color: #b6bae5;
+    text-shadow: none;
+}
+.anime-data-info ul li strong {
+    font-weight: 400;
 }

@@ -387,7 +387,7 @@ div.left-image-lists img {
 .progressoftheanime button:hover{color: rgb(193, 193, 255);}
 .progressoftheanime button:active {color: rgb(255, 255, 255);}
 .progressoftheanime button:last-child {margin-left: 8px;}
-div.progressoftheanime:hover button {display: block;}
+.progressoftheanime:hover button {display: block;}
 
 .under-animelist {
     font-size: 11px;
