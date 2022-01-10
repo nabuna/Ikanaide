@@ -113,7 +113,6 @@ div.anime-info-cover-desc-score {
     flex-direction: column;
     align-items: center;
     min-width: 100%;
-    
 }
 
 div.anime-info-cover-desc-info {
@@ -257,12 +256,31 @@ div.anime-data-info li:first-child {margin-top: none;}
 div.anime-data-info li:last-child {margin-bottom: none;}
 div.anime-data-info li {
     margin: 5px 0px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
 }
 
 .anime-data-info ul li span {
-    color: #b6bae5;
     text-shadow: none;
 }
 .anime-data-info ul li strong {
-    font-weight: 400;
+    font-weight: 700;
+    color: #e7e7e7;
+    
 }
+/*
+.anime-friends-activity {
+    position: absolute;
+    left: 50%;
+    transform: translateX(30%);
+    text-align: right;
+    min-width: 5em;
+}
+
+.anime-friends-score {
+    min-width: 1.5em;
+    text-align: right;
+    
+}
+*/
