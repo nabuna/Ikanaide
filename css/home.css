@@ -11,12 +11,14 @@ section.seasonal-anime-wrapper {
     min-width: 60%;
     max-width: 60%;
     overflow: hidden;
-    border-radius: 3px;
+    border-radius: 7px;
     /*border: 0px solid #b6bae5a1;
     background-color: #222129; 
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.253);*/
     padding: 10px;
     background-color: #222129;
+    border: 1px solid #2b2935;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.253);
     /*border: 1px solid #b6bae5;*/
     box-sizing: border-box; /* so width: 100% doesn't cause problems with body-wrapper's padding on phone devices. */
 }
@@ -29,7 +31,7 @@ section.seasonal-anime-wrapper {
 div.seasonal-anime {
     width: 100px; /* 1000/8.5 = 117px */
     height: 150px; /* 1500/8.5 = 176px */
-    border-radius: 7px;
+    border-radius: 8px;
     display: flex;
     flex-wrap: wrap;
     margin: 5px 7px;
@@ -41,7 +43,7 @@ div.seasonal-anime {
 div.seasonal-anime:first-child {margin-left: 0;}
 
 div.seasonal-anime img {
-    border-radius: 7px;
+    border-radius: 4px;
     min-height: 100%;
     min-width: 100%;
     max-height: 100%;
@@ -70,13 +72,15 @@ section.right-side {
     max-width: 30%;
     min-height: 100%;
 
-    border-radius: 3px;
+    border-radius: 8px;
     /*border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;*/
 
     margin-left: 10px;
     padding: 10px;
     background-color: #222129;
+    border: 1px solid #2b2935;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.253);
     /*border: 0px solid #b6bae5a1;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.253);*/
     
