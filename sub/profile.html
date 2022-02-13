@@ -25,7 +25,9 @@
                     </ul>
                 </nav>
                 <div class="profile">
+                    
                     <ul class="profile-list">
+                        <a href="../sub/profile.html"><img src="../img/profile-icon/twitter.jpg"  class="profile-icon-header" alt=""></a>
                         <li onclick="profileDropdownToggle('toggle');">nabunafge <span class="profile-arrow"><i class="fas fa-caret-down"></i></span>
                             <div id="profile_dropdown" class="profile-dropdown">
                                 <a href="#"><i class="fas fa-user"></i>Profile</a>
@@ -79,7 +81,7 @@
                         <section class="header-profile">
                             <img src="../img/profile-icon/header.jpg" alt=""> <!-- make size 600x200 obligatory. -->
                         </section>
-                        <section class="list-profile">
+                        <section class="list-profile" id="list_profile">
                             <ul>
                                 <button id="aboutBut"      onclick="toggle('about');">      <li id ="about_list">        About</li></button>
                                 <button id="animelistBut"  onclick="toggle('animelist');">  <li id ="anime_list">   Anime List</li></button>
@@ -370,6 +372,7 @@
         <script language="JavaScript">
 
             document.getElementById('about').style.display = "block";
+            document.getElementById('aboutBut').style.backgroundColor = "#ced2ff";
 
             function toggle(id) {
                 switch(id) {
@@ -380,14 +383,29 @@
                         document.getElementById('vnlist').style.display = "none";
                         document.getElementById('reviewlist').style.display = "none";
                         document.getElementById('favorites').style.display = "none";
+
+                        document.getElementById('aboutBut').style.backgroundColor = "#ced2ff";
+                        document.getElementById('animelistBut').style.backgroundColor = "#b6bae5";
+                        document.getElementById('mangalistBut').style.backgroundColor = "#b6bae5";
+                        document.getElementById('vnlistBut').style.backgroundColor = "#b6bae5";
+                        document.getElementById('reviewlistBut').style.backgroundColor = "#b6bae5";
+                        document.getElementById('favoritesBut').style.backgroundColor = "#b6bae5";
                         break;
                     case 'animelist':
                         document.getElementById('about').style.display = "none";
                         document.getElementById('animelist').style.display = "block";
+                        document.getElementById('animelistBut').style.backgroundColor = "#ced2ff";
                         document.getElementById('mangalist').style.display = "none";
                         document.getElementById('vnlist').style.display = "none";
                         document.getElementById('reviewlist').style.display = "none";
                         document.getElementById('favorites').style.display = "none";
+
+                        document.getElementById('aboutBut').style.backgroundColor = "#b6bae5";
+                        document.getElementById('animelistBut').style.backgroundColor = "#ced2ff";
+                        document.getElementById('mangalistBut').style.backgroundColor = "#b6bae5";
+                        document.getElementById('vnlistBut').style.backgroundColor = "#b6bae5";
+                        document.getElementById('reviewlistBut').style.backgroundColor = "#b6bae5";
+                        document.getElementById('favoritesBut').style.backgroundColor = "#b6bae5";
                         break;
                     case 'mangalist':
                         document.getElementById('about').style.display = "none";
@@ -396,6 +414,13 @@
                         document.getElementById('vnlist').style.display = "none";
                         document.getElementById('reviewlist').style.display = "none";
                         document.getElementById('favorites').style.display = "none";
+
+                        document.getElementById('aboutBut').style.backgroundColor = "#b6bae5";
+                        document.getElementById('animelistBut').style.backgroundColor = "#b6bae5";
+                        document.getElementById('mangalistBut').style.backgroundColor = "#ced2ff";
+                        document.getElementById('vnlistBut').style.backgroundColor = "#b6bae5";
+                        document.getElementById('reviewlistBut').style.backgroundColor = "#b6bae5";
+                        document.getElementById('favoritesBut').style.backgroundColor = "#b6bae5";
                         break;
                     case 'vnlist':
                         document.getElementById('about').style.display = "none";
@@ -404,6 +429,13 @@
                         document.getElementById('vnlist').style.display = "block";
                         document.getElementById('reviewlist').style.display = "none";
                         document.getElementById('favorites').style.display = "none";
+
+                        document.getElementById('aboutBut').style.backgroundColor = "#b6bae5";
+                        document.getElementById('animelistBut').style.backgroundColor = "#b6bae5";
+                        document.getElementById('mangalistBut').style.backgroundColor = "#b6bae5";
+                        document.getElementById('vnlistBut').style.backgroundColor = "#ced2ff";
+                        document.getElementById('reviewlistBut').style.backgroundColor = "#b6bae5";
+                        document.getElementById('favoritesBut').style.backgroundColor = "#b6bae5";
                         break;
                     case 'reviewlist':
                         document.getElementById('about').style.display = "none";
@@ -412,6 +444,13 @@
                         document.getElementById('vnlist').style.display = "none";
                         document.getElementById('reviewlist').style.display = "block";
                         document.getElementById('favorites').style.display = "none";
+
+                        document.getElementById('aboutBut').style.backgroundColor = "#b6bae5";
+                        document.getElementById('animelistBut').style.backgroundColor = "#b6bae5";
+                        document.getElementById('mangalistBut').style.backgroundColor = "#b6bae5";
+                        document.getElementById('vnlistBut').style.backgroundColor = "#b6bae5";
+                        document.getElementById('reviewlistBut').style.backgroundColor = "#ced2ff";
+                        document.getElementById('favoritesBut').style.backgroundColor = "#b6bae5";
                         break;
                     case 'favorites':
                         document.getElementById('about').style.display = "none";
@@ -420,9 +459,24 @@
                         document.getElementById('vnlist').style.display = "none";
                         document.getElementById('reviewlist').style.display = "none";
                         document.getElementById('favorites').style.display = "block";
+
+                        document.getElementById('aboutBut').style.backgroundColor = "#b6bae5";
+                        document.getElementById('animelistBut').style.backgroundColor = "#b6bae5";
+                        document.getElementById('mangalistBut').style.backgroundColor = "#b6bae5";
+                        document.getElementById('vnlistBut').style.backgroundColor = "#b6bae5";
+                        document.getElementById('reviewlistBut').style.backgroundColor = "#b6bae5";
+                        document.getElementById('favoritesBut').style.backgroundColor = "#ced2ff";
                         break;
                 }
             }
+
+            const about = document.getElementById('about');
+            const animelist = document.getElementById('animelist');
+            const mangalist = document.getElementById('mangalist');
+            const vnlist = document.getElementById('vnlist');
+            const reviewlist = document.getElementById('reviewlist');
+            const favorites = document.getElementById('favorites');
+
 
         </script>
 

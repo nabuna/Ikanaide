@@ -26,6 +26,7 @@
                 </nav>
                 <div class="profile">
                     <ul class="profile-list">
+                        <a href="sub/profile.html"><img src="img/profile-icon/twitter.jpg"  class="profile-icon-header" alt=""></a>
                         <li onclick="profileDropdownToggle('toggle');">nabunafge <span class="profile-arrow"><i class="fas fa-caret-down"></i></span>
                             <div id="profile_dropdown" class="profile-dropdown" id="profile-dropdown">
                                 <a href="sub/profile.html"><i class="fas fa-user"></i>Profile</a>
@@ -48,7 +49,6 @@
                                 if (profileDropdown.style.opacity == "0" && profileDropdown.style.visibility == "hidden") {
                                     profileDropdown.style.opacity = "1"
                                     profileDropdown.style.visibility = "visible"
-                                    profileDropdown.style.marginTop = "0px"
                                 } else {
                                     profileDropdown.style.opacity = "0"
                                     profileDropdown.style.visibility = "hidden"
