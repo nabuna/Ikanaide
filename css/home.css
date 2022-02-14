@@ -93,11 +93,14 @@ section.right-side {
 section.right-side p {
     line-height: 1.6em;
     text-shadow: 1px 1px 1px black;
+    color: #e7e7e7;
 }
 
 section.right-side p span {
-    color: #b6bae5;
+    
     font-size: 13px;
+    float: right;
+    color: white;
 }
 
 div.activity {
@@ -155,7 +158,6 @@ div.home-review-wrapper {
     margin-right: 7px;
     margin-bottom: 0px!important; /* since there is no second row here, no need to have a bottom margin. */
 }
-
 
 
 @media (max-width: 813px) {

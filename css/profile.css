@@ -6,7 +6,9 @@
 div.profile-wrapper {
     height: auto;
     text-align: center;
-    max-width: 600px;
+    min-width: 56.76%;
+    max-width: 56.76%;
+    
 }
 
 .profile-wrapper h2{
@@ -42,6 +44,7 @@ section.profile-photo {
     justify-content: center;
     z-index: 9999;
     position: relative;
+    
 }
 
 div.github-profile {
@@ -104,8 +107,8 @@ section.header-profile {
 section.header-profile img {
     max-width: 100%;
     max-height: 200px; 
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
     margin-top: -197px; /* im too lazy ok */
     box-shadow: none;
 }
@@ -154,8 +157,8 @@ section.lists-wrapper {
     border-top: none;
     text-shadow: 0px 1px 1px black;
     text-align: left;
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
     
     background-color: #222129;/*#1e1d2283 26252e*/
 
@@ -457,3 +460,81 @@ div.review-wrapper {
 }
 
 .favorites-img:hover .favorite-entry-desc {opacity: 0.9; transition: .1s}
+
+
+section.activity-feed {
+    height: auto;
+    min-width: 39%;
+    border: 1px solid #b6bae5;
+    background-color: #222129;
+    margin-left: 10px;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.253);
+}
+
+div.title-rightside {
+    height: 1.8em;
+    border-bottom: 1px solid #ccccff15;
+    margin-bottom: 10px;
+}
+
+div.activity-wrapper {
+    display: flex;
+    max-width: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #222129;
+    height: 100px;
+    border: 1px solid #222129;
+    padding: 5px 0px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+div.activity-wrapper:first-child { margin-bottom: none; }
+
+div.activity-entry-cover {
+    width: 40px;
+}
+
+div.activity-entry-cover img {
+    max-height: 40px;
+    border-radius: 50px;
+}
+
+div.activity-entry-content {
+    display: block;
+    width: 100%;
+    margin-left: 10px;
+}
+
+div.activity-entry-content-first-row {
+    display: flex;
+    height: 1.3em;
+    width: 100%;
+}
+
+div.activity-username {
+    color:rgb(192, 192, 192);
+    text-shadow: none;
+}
+
+span.activity-display-username { font-weight: bold; color: whitesmoke; }
+
+div.activity-entry-settings {  margin-left: auto; margin-top: 3px;}
+
+div.activity-entry-settings svg{
+    max-height: 14px;
+    fill: rgb(192, 192, 192);
+}
+
+div.activity-entry-content-desc {
+    margin-top: 3px;
+    text-shadow: none;
+    margin-right: 20px;
+}
+div.activity-entry-content-desc a{
+    color: #b6bae5;
+}
