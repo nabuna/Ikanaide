@@ -31,11 +31,13 @@ button {
 div.web-container {
     width: 100%;
     height: 100%;
+    
 }
 
 div.mid-wrapper {
     max-width: 1057; /* 1200px 62.5% */
     margin: auto;
+    
 }
 
 header {
@@ -140,11 +142,15 @@ ul.profile-list li {
     
 }
 
-li span.profile-arrow {
+button span.profile-arrow {
     padding-left: 4px;
     font-size: 16px;
     color: whitesmoke;
-   
+}
+
+button#butProfileDropdown:hover{
+    opacity: 0.8;
+    transition: .1s;
 }
 
 div.profile-dropdown {
@@ -158,41 +164,31 @@ div.profile-dropdown {
     width: 144px;
     position: absolute;
     right: -15;
-    margin-top: 10px;
-    /* margin-top: -1px;  so it overlaps under-header's border */
+    margin-top: 75px;
     
     border-radius: 4px;
-    /*border-top-left-radius: 0px;
-    /*border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px; */
-    border: 0px solid #2b2935; /* b6bae58a 2b2935 */
-    /*border-top: none; */
-    box-shadow: 0 1px 3px rgba(0,0,0,.25);
+    box-shadow: 0 0px 5px rgba(0,0,0,.25);
     border: 1px solid whitesmoke;
-    /*border-top-left-radius: 0px;
-    border-top-right-radius: 0px;*/
    
     background: #1e1d24;
     background: linear-gradient(to bottom, #222129 0%, #1c1c24 90%);
-
+/*
     opacity: 0;
     visibility: hidden; /*this is needed, otherwise, the element will actually display, just without opacity */
     transition: 0.06s ease-in;
-
+    display: none;
     z-index: 727;
 }
 
-
+/*
 ul.profile-list li:hover div.profile-dropdown {
     opacity: 1;
     visibility: visible;
-}
+}*/
 
 
 div.profile-dropdown a{
     display: block;
-
-    
     width: 100%;
     transition: .4s;
 }

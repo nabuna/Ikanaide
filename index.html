@@ -27,7 +27,7 @@
                 <div class="profile">
                     <ul class="profile-list">
                         <a href="sub/profile.html"><img src="img/profile-icon/twitter.jpg"  class="profile-icon-header" alt=""></a>
-                        <li onclick="profileDropdownToggle('toggle');">nabunafge <span class="profile-arrow"><i class="fas fa-caret-down"></i></span>
+                        <button id="butProfileDropdown" onclick="pdToggle();">nabunafge <span class="profile-arrow"><i class="fas fa-caret-down"></i></span></button>
                             <div id="profile_dropdown" class="profile-dropdown" id="profile-dropdown">
                                 <a href="sub/profile.html"><i class="fas fa-user"></i>Profile</a>
                                 <a href="#"><i class="fas fa-envelope"></i>Notifications</a>
@@ -36,25 +36,23 @@
                                 <a href="#"><i class="fas fa-cog"></i>Settings</a>
                                 <a href="#"><i class="fas fa-heart"></i>Donate</a>
                             </div>
-                        </li>
                     </ul>
 
                     <script language="JavaScript">
 
                         let profileDropdown = document.getElementById('profile_dropdown');
-            
-                        function profileDropdownToggle(id) {
-                            switch(id) {
-                                case 'toggle':
-                                if (profileDropdown.style.opacity == "0" && profileDropdown.style.visibility == "hidden") {
-                                    profileDropdown.style.opacity = "1"
-                                    profileDropdown.style.visibility = "visible"
-                                } else {
-                                    profileDropdown.style.opacity = "0"
-                                    profileDropdown.style.visibility = "hidden"
-                                }
+                        let butProfileDropdown = document.getElementById('butProfileDropdown');
+
+                        pdToggle(); //so 2 clicks aren't needed
+
+                        function pdToggle() {
+                        
+                            if (profileDropdown.style.display === "none") {
+                                profileDropdown.style.display = "block"; 
+                            } else {
+                                profileDropdown.style.display = "none";
                             }
-                        }
+                        };
             
                     </script>
 
