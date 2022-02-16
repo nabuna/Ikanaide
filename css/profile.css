@@ -98,6 +98,7 @@ section.list-profile {
 
     max-height: 30px;
     white-space: nowrap;
+    overflow-x: auto;
 
     background: #b6bae5;
     color: #222129;
@@ -309,7 +310,6 @@ div.about-desc {
 
 div.about-desc strong{
     font-weight: 700;
-    -webkit-font-smoothing: antialiased;
 }
 
 div.about-desc span {
@@ -660,6 +660,6 @@ p.activity-entry-content-desc-text-user-commentary { margin-bottom: 8px; }
         min-width: 100%!important;
     }
     section.list-profile {
-        overflow-x: auto;
+        
     }
 }
