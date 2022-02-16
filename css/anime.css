@@ -162,7 +162,7 @@ div.characters-wrapper-content {
     max-height: 65px;
     margin-left: -1px; /* because entries have a border of 1px */
     justify-content: space-between;
-    margin-bottom: 4px;
+    margin-bottom: 4px; /* para que la scrollbar no quede pegada */
 }
 
 div.characters-wrapper-title {

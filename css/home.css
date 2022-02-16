@@ -157,6 +157,7 @@ div.home-review-wrapper {
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
+    padding-bottom: 4px; /* para que la scrollbar no quede pegada */
     overflow-x: auto;
 }
 
