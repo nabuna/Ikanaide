@@ -192,41 +192,103 @@ ul.anime-ul li:hover {
 div.first-row {
     text-align: center;
     max-width: 100%;
-    
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccccff15;
 }
 
 div.description-profile {
     text-align: center;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 div.username-profile-2 {
-    font-size: 25px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.781); 
-    display: block;
-    justify-content: center;
-    align-self: center;
-    margin-bottom: 10px;
     display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    font-size: 18px;
+    position: relative;
+}
+
+span.username-profile-2-displayname {
+    font-weight: bold;
+}
+
+span.username-profile-2-at {
+    color:rgb(192, 192, 192);
+}
+
+span#follows-you {
+    background-color: #302f3a;
+    border-radius: 5px;
+    padding: 1px 4px;
+    font-size: 10px;
+    margin-left: 5px;
+    margin-top: 3px;
+    display: flex;
+    align-items: center;
+    color: rgb(192, 192, 192);
+    max-width: 80px;
 }
 
 div.user-titles {
+    display: flex;
+    margin-left: auto;
+}
+
+div.user-titles *{
     background-color: #17171d;
     color: #b6bae5;
-    text-shadow: none;
-    border-radius: 200px;
-    font-size: 10px;
-    padding: 2px 6px;
-    margin: auto 10px;
-    font-weight: 800;
+    border-radius: 10px;
+    font-size: 11px;
+    padding: 2px 7px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 5px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
 }
 
-div.user-titles:last-child {
-    margin-left: -5px;
-}
-
-span.user-title-admin {
+div.user-title-admin {
     color: #eccbac;
+}
+
+div.user-title-supporter {
+    color: rgb(253, 114, 137);
+}
+
+div.profile-social-numbers {
+    display: flex;
+    color: rgb(192, 192, 192);
+    font-size: 14px;
+}
+
+div.profile-numberof-follows {padding: 2px 4px; border-radius: 5px; margin-left: -4px}
+div.profile-numberof-followers {padding: 2px 4px; border-radius: 5px;}
+
+div.profile-numberof-follows:hover {
+    background-color: #302f3a;
+    transition: .1s;
+    cursor: pointer;
+}
+
+div.profile-numberof-followers:hover {
+    background-color: #302f3a;
+    transition: .1s;
+    cursor: pointer;
+}
+
+span#follow_count {
+    color: white;
+    font-weight: bold;
+   
+}
+
+span#follower_count {
+    
+    color: white;
+    font-weight: bold;
+    
 }
 
 div.about-cells {
@@ -582,5 +644,24 @@ p.activity-entry-content-desc-text-user-commentary { margin-bottom: 8px; }
     section.activity-feed {
         margin-left: 0px;
         margin-top: 10px;
+    }
+    div.username-profile-2 {
+        display: flex;
+        text-align: left;
+    }
+    div.user-titles {
+        margin: 5px 0px;
+        justify-content: left;
+        display: none;
+    }
+    div.user-titles *:first-child {
+        margin-left: 0px;
+    }
+    div.profile-social-numbers {
+        display: flex;
+        justify-content: left;
+    }
+    div.review-wrapper {
+        min-width: 100%!important;
     }
 }

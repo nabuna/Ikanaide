@@ -12,6 +12,7 @@ body {
     text-decoration: none;
     list-style: none;
     -webkit-font-smoothing: antialiased;
+    text-shadow: none!important;
 }
 
 a {
@@ -149,7 +150,7 @@ button span.profile-arrow {
 }
 
 button#butProfileDropdown:hover{
-    opacity: 0.8;
+    opacity: 0.6;
     transition: .1s;
 }
 
