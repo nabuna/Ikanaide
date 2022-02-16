@@ -143,15 +143,20 @@ ul.profile-list li {
     
 }
 
+.profile-icon-header:active {
+    opacity: 0.7;
+}
+
 button span.profile-arrow {
     padding-left: 4px;
     font-size: 16px;
     color: whitesmoke;
+    
 }
 
 button#butProfileDropdown:hover{
     opacity: 0.6;
-    transition: .1s;
+    transition: .15s;
 }
 
 div.profile-dropdown {
@@ -176,7 +181,7 @@ div.profile-dropdown {
 /*
     opacity: 0;
     visibility: hidden; /*this is needed, otherwise, the element will actually display, just without opacity */
-    transition: 0.06s ease-in;
+    transition: .15s;
     display: none;
     z-index: 727;
 }

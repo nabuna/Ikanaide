@@ -9,14 +9,11 @@ div.profile-wrapper {
     text-align: center;
     min-width: 56.76%;
     max-width: 56.76%;
+    overflow: hidden;
 }
 
 .profile-wrapper h2{
     background-color: #222129;
-}
-
-.profile-wrapper img {
-    
 }
 
 .body-wrapper svg{
@@ -97,7 +94,12 @@ section.profile-photo svg:hover {
 }
 
 section.list-profile {
-    width: 100%;
+    min-width: 100%;
+    max-width: auto;
+
+    max-height: 30px;
+    white-space: nowrap;
+
     background: #b6bae5;
     color: #222129;
     text-shadow: none;
@@ -112,9 +114,6 @@ section.list-profile {
 
 section.list-profile ul{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    
 }
 
 section.list-profile li {
@@ -217,6 +216,7 @@ span.username-profile-2-displayname {
 
 span.username-profile-2-at {
     color:rgb(192, 192, 192);
+    font-weight: normal;
 }
 
 span#follows-you {
@@ -230,6 +230,7 @@ span#follows-you {
     align-items: center;
     color: rgb(192, 192, 192);
     max-width: 80px;
+    max-height: 16px;
 }
 
 div.user-titles {
@@ -281,11 +282,9 @@ div.profile-numberof-followers:hover {
 span#follow_count {
     color: white;
     font-weight: bold;
-   
 }
 
 span#follower_count {
-    
     color: white;
     font-weight: bold;
     
@@ -294,7 +293,6 @@ span#follower_count {
 div.about-cells {
     display: flex;
     justify-content: center;
-
 }
 
 div.about-desc {
@@ -663,5 +661,8 @@ p.activity-entry-content-desc-text-user-commentary { margin-bottom: 8px; }
     }
     div.review-wrapper {
         min-width: 100%!important;
+    }
+    section.list-profile {
+        overflow-x: auto;
     }
 }
