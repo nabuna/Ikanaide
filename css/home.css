@@ -12,6 +12,8 @@ section.seasonal-anime-wrapper {
     max-width: 70%;
     overflow: hidden;
     border-radius: 7px;
+
+    
     /*border: 0px solid #b6bae5a1;
     background-color: #222129; 
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.253);*/
@@ -26,6 +28,8 @@ section.seasonal-anime-wrapper {
 .img-wrapper {
     display: flex;
     overflow: hidden;
+    overflow-x: auto;
+    
 }
 
 div.seasonal-anime {

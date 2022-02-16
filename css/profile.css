@@ -9,7 +9,6 @@ div.profile-wrapper {
     text-align: center;
     min-width: 56.76%;
     max-width: 56.76%;
-    overflow: hidden;
 }
 
 .profile-wrapper h2{
@@ -189,32 +188,22 @@ ul.anime-ul li:hover {
 */
 
 div.first-row {
-    text-align: center;
+    text-align: left;
     max-width: 100%;
     padding-bottom: 5px;
     border-bottom: 1px solid #ccccff15;
-}
-
-div.description-profile {
-    text-align: center;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-
-div.username-profile-2 {
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.781); 
-    display: flex;
-    align-items: center;
-    margin-bottom: 5px;
-    font-size: 18px;
     position: relative;
 }
 
-span.username-profile-2-displayname {
+div.username-profile {
+    font-size: 16px;
+}
+
+span.username-profile-displayname {
     font-weight: bold;
 }
 
-span.username-profile-2-at {
+span.username-profile-at {
     color:rgb(192, 192, 192);
     font-weight: normal;
 }
@@ -222,20 +211,19 @@ span.username-profile-2-at {
 span#follows-you {
     background-color: #302f3a;
     border-radius: 5px;
-    padding: 1px 4px;
+    padding: 0px 4px;
     font-size: 10px;
-    margin-left: 5px;
-    margin-top: 3px;
-    display: flex;
-    align-items: center;
+    margin-bottom: 5px;
     color: rgb(192, 192, 192);
     max-width: 80px;
     max-height: 16px;
+    word-wrap:break-word
 }
 
 div.user-titles {
     display: flex;
-    margin-left: auto;
+    align-self: center;
+    float: right;
 }
 
 div.user-titles *{
@@ -246,7 +234,6 @@ div.user-titles *{
     padding: 2px 7px;
     font-weight: bold;
     text-align: center;
-    margin-left: 5px;
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
 }
 
@@ -256,6 +243,10 @@ div.user-title-admin {
 
 div.user-title-supporter {
     color: rgb(253, 114, 137);
+}
+
+div.user-title-dev {
+    margin-left: 5px;
 }
 
 div.profile-social-numbers {
@@ -288,6 +279,12 @@ span#follower_count {
     color: white;
     font-weight: bold;
     
+}
+
+div.description-profile {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 div.about-cells {
@@ -635,7 +632,7 @@ p.activity-entry-content-desc-text-user-commentary { margin-bottom: 8px; }
     cursor: pointer;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     div.profile-wrapper {
         min-width: 100%;
     }

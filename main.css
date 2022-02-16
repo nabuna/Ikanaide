@@ -4,6 +4,8 @@ body {
     background-color: #17171d; /* #222129 */
     font-family: nunito;
     image-rendering: -webkit-optimize-contrast;
+    scrollbar-color: whitesmoke transparent;
+    scrollbar-width: thin;
 }
 
 * {
@@ -11,8 +13,20 @@ body {
     padding: 0;
     text-decoration: none;
     list-style: none;
-    -webkit-font-smoothing: antialiased;
     text-shadow: none!important;
+}
+
+*::-webkit-scrollbar {
+    height: 7px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: whitesmoke;
+    border-radius: 4px;
+}
+
+img {
+    image-rendering: -webkit-optimize-contrast;
 }
 
 a {
