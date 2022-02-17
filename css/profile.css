@@ -503,6 +503,57 @@ div.review-wrapper {
 
 
 
+section.animanga-resumes {
+    display: flex;
+}
+
+section.animanga-resumes div.profile-anime-overview, div.profile-manga-overview {
+    max-height: 700px;
+    width: 50%;
+    box-sizing: border-box;
+
+    border: 1px solid #b6bae5;
+    background-color: #222129;
+
+    margin-top: 10px;
+    padding: 15px;
+
+    border-radius: 8px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.253);
+}
+
+div.profile-anime-overview {
+    margin-right: 5px;
+    display: flex;
+}
+
+div.profile-anime-overview div {
+    width: 33.3%;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+div.profile-anime-overview span {
+    font-weight: normal;
+} 
+
+div.profile-manga-overview {
+    margin-left: 5px;
+    display: flex;
+}
+
+div.profile-manga-overview div {
+    width: 33.3%;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 15px
+}
+
+div.profile-manga-overview span {
+    font-weight: normal;
+} 
+
 
 section.activity-feed {
     max-height: 700px;
@@ -632,7 +683,14 @@ p.activity-entry-content-desc-text-user-commentary { margin-bottom: 8px; }
     cursor: pointer;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1060px) {
+    .div.activity-feed {
+        min-width: 20%!important;
+        max-width: 20%!important;
+    }
+}
+
+@media (max-width: 720px) {
     div.profile-wrapper {
         min-width: 100%;
     }
@@ -659,7 +717,45 @@ p.activity-entry-content-desc-text-user-commentary { margin-bottom: 8px; }
     div.review-wrapper {
         min-width: 100%!important;
     }
-    section.list-profile {
-        
+
+    section.list-profile ul {
+        justify-content: space-around!important;
+    }
+
+
+    section.animanga-resumes {
+        flex-direction: column;
+    }
+
+    section.animanga-resumes div.profile-anime-overview, div.profile-manga-overview {
+        width: 100%!important;
+    }
+
+    div.profile-anime-overview {
+        margin-right: 0px!important;
+        display: flex;
+    }
+    div.profile-manga-overview {
+        margin-left: 0px!important;
+    }
+
+
+
+}
+
+@media (max-width: 614px) {
+    section.list-profile ul{
+        justify-content:inherit!important;
     }
 }
+
+@media (max-width: 938px) {
+    div.profile-anime-overview div {
+        font-size: 12px!important;
+    }
+    div.profile-anime-overview span {font-size: 16px!important}
+    div.profile-manga-overview div {
+        font-size: 12px!important;
+    }
+    div.profile-manga-overview span {font-size: 16px!important}
+} 
