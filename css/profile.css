@@ -690,6 +690,23 @@ p.activity-entry-content-desc-text-user-commentary { margin-bottom: 8px; }
     }
 }
 
+@media (max-width: 784px) {
+    section.animanga-resumes {
+        flex-direction: column;
+    }
+    section.animanga-resumes div.profile-anime-overview, div.profile-manga-overview {
+        width: 100%!important;
+    }
+
+    div.profile-anime-overview {
+        margin-right: 0px!important;
+        display: flex;
+    }
+    div.profile-manga-overview {
+        margin-left: 0px!important;
+    }
+}
+
 @media (max-width: 720px) {
     div.profile-wrapper {
         min-width: 100%;
@@ -723,21 +740,6 @@ p.activity-entry-content-desc-text-user-commentary { margin-bottom: 8px; }
     }
 
 
-    section.animanga-resumes {
-        flex-direction: column;
-    }
-
-    section.animanga-resumes div.profile-anime-overview, div.profile-manga-overview {
-        width: 100%!important;
-    }
-
-    div.profile-anime-overview {
-        margin-right: 0px!important;
-        display: flex;
-    }
-    div.profile-manga-overview {
-        margin-left: 0px!important;
-    }
 
 
 
