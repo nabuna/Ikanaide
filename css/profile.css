@@ -98,7 +98,8 @@ section.list-profile {
 
     max-height: 30px;
     white-space: nowrap;
-    overflow-x: auto;
+    
+    overflow-y:hidden;
 
     background: #b6bae5;
     color: #222129;

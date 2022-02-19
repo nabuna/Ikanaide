@@ -25,6 +25,10 @@ body {
     border-radius: 4px;
 }
 
+progress[value] {
+    color: #b6bae5;
+}
+
 img {
     image-rendering: -webkit-optimize-contrast;
 }
@@ -62,7 +66,7 @@ header {
 
     color: whitesmoke;
     text-shadow: 1px 1px 1px black;
-    border-bottom: 2px solid #2b2935;
+    border-bottom: 2px solid #2b2935; /* 2b2935 */
     /*border-image: #b6bae5;linear-gradient(90deg, #b6bae500 0%, #b6bae5 50%, #b6bae500 100%) 1;*/
     background-color: #222129;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.26);
