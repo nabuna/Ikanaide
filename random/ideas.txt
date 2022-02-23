@@ -12,3 +12,6 @@ fecha de inicio y final de ver leer animemanga bla bla
 donation goal list like star citizens one
 un div a la izquierda de las listas que deje escoger entre completed, watching, etc., al scrollear, que se pegue al header maybe
 otro div a la derecha que si das click al div que contiene el titulo  (no al titulo en si) aparezca informacion del anime
+
+21-02-2022
+1. hacer de la experencia de usuario en ikanaide un asemejo al crear una cuenta sub en twitter donde hables exclusivamente de anime y manga. la idea es que si quieres hacer algo así, lo hagas en ikanaide y no en twitter.

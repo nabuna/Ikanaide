@@ -8,27 +8,25 @@ div.title {
 
 section.seasonal-anime-wrapper {
     
-    min-width: 70%;
-    max-width: 70%;
+    min-width: 69%;
+    max-width: 69%;
     overflow: hidden;
-    border-radius: 7px;
 
-    
     /*border: 0px solid #b6bae5a1;
     background-color: #222129; 
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.253);*/
-    padding: 10px;
-    background-color: #222129;
-    border: 1px solid #2b2935;
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.253);
-    /*border: 1px solid #b6bae5;*/
+    border-radius: 4px;
     box-sizing: border-box; /* so width: 100% doesn't cause problems with body-wrapper's padding on phone devices. */
+    /*
+    background-color: #222129;
+    border: 1px solid #44415300;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.253);*/
+    
 }
 
 .img-wrapper {
     display: flex;
     overflow: hidden;
-    overflow-x: auto;
     
 }
 
@@ -75,23 +73,18 @@ section.right-side {
     min-width: 29%;
     max-width: 29%;
     min-height: 100%;
-
-    border-radius: 8px;
-    /*border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;*/
-
-    margin-left: 10px;
-    padding: 10px;
-    background-color: #222129;
-    border: 1px solid #2b2935;
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.253);
-    /*border: 0px solid #b6bae5a1;
-    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.253);*/
-    
+    border-radius: 4px;
     overflow: hidden;
+
+    margin-left: 20px;
+    
     font-size: 14px;
 
     box-sizing: border-box;
+    /*
+    background-color: #222129;
+    border: 1px solid #2b2935;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.253);*/
 }
 
 section.right-side p {
@@ -158,7 +151,6 @@ div.home-review-wrapper {
     flex-direction: row;
     box-sizing: border-box;
     padding-bottom: 4px; /* para que la scrollbar no quede pegada */
-    overflow-x: auto;
 }
 
 .review-wrapper {
@@ -178,12 +170,12 @@ div.home-review-wrapper {
         min-width: 100%!important;
         min-width: 100%!important;
         margin-left: 0px!important;
+        margin-top: 20px;
     }
 
     .seasonal-anime-wrapper {
         min-width: 100%!important;
         min-width: 100%!important;
-        margin-bottom: 10px;
     }
 }
 
@@ -203,6 +195,12 @@ div.home-review-wrapper {
 @media (max-width: 430px) {
     .review-wrapper {
         min-width: 80%!important;
+    }
+    .home-review-wrapper {
+        overflow-x: auto;
+    }
+    .img-wrapper {
+        overflow-x: auto;
     }
 }
 

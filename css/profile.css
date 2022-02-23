@@ -1,7 +1,5 @@
 .body-wrapper {
     justify-content: center;
-    margin-top: 7px;
-    
 }
 
 div.profile-wrapper {
@@ -9,6 +7,7 @@ div.profile-wrapper {
     text-align: center;
     min-width: 56.76%;
     max-width: 56.76%;
+    box-sizing: border-box;
 }
 
 .profile-wrapper h2{
@@ -32,10 +31,10 @@ section.profile-photo {
     min-height: 200px;
     max-height: 200px;
 
-    background-color: blue;
+    background-color: transparent;
 
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
 
     background: url('../img/profile-icon/header.jpg');
     background-size: cover;
@@ -95,11 +94,12 @@ section.profile-photo svg:hover {
 section.list-profile {
     min-width: 100%;
     max-width: auto;
+    overflow: hidden;
 
-    max-height: 30px;
+    
     white-space: nowrap;
     
-    overflow-y:hidden;
+    
 
     background: #b6bae5;
     color: #222129;
@@ -118,7 +118,7 @@ section.list-profile ul{
 }
 
 section.list-profile li {
-    padding: 5px 28px; /* not sure how to equally divide background-color (on hover) without doing this shit? */
+    padding: 5px 25px; /* not sure how to equally divide background-color (on hover) without doing this shit? */
 }
 
 section.list-profile button {
@@ -134,18 +134,14 @@ section.list-profile button:hover {
 section.lists-wrapper {
     max-width: 100%;
     min-height: auto;
-    padding: 10px 15px;
+    padding: 10px 0px;
     padding-bottom: 0px;
-    border: 1px solid #b6bae5;
-    border-top: none;
+    
     text-shadow: 0px 1px 1px black;
     text-align: left;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
     
-    background-color: #222129;/*#1e1d2283 26252e*/
-
- 
+    /*border: 1px solid #b6bae5;
+    background-color: #222129;*/
 }
 
 section.about-list {
@@ -158,47 +154,30 @@ section.anime-list {
     display: block;
 }
 
-/** - currently not on use -
 
-.anime-ul {
-    display: none;
-}
-
-ul.anime-ul li {
-    height: 25px;
-    line-height: 40px;
-    margin: 0px -15px;
-    padding: 5px 15px;
-    display: flex;
-    align-items: center;
-    transition: background .4s; /* to fade-in fastly and fade-out slowly 
-}
-
-ul.anime-ul li:first-child {
-    margin-top: -10px;
-}
-
-ul.anime-ul li:last-child {
-    margin-bottom: -10px;
-}
-
-ul.anime-ul li:hover {
-    background: #17171dcb;
-    transition: background .1s; /* to fade-in fastly and fade-out slowly 
-}
-
-*/
 
 div.first-row {
     text-align: left;
     max-width: 100%;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #ccccff15;
+    padding: 10px;
+    padding-top: 0px;
+    border-bottom: 0px solid #ccccff15;
     position: relative;
+    margin-bottom: 10px;
+
+    
+    
+    /*box-shadow: 0 4px 3px -3px rgba(0,0,0,.25);*/
+}
+
+div.username-profile-container {
+    max-width: 75%;
 }
 
 div.username-profile {
     font-size: 16px;
+    display: flex;
+    justify-content: space-between;
 }
 
 span.username-profile-displayname {
@@ -214,12 +193,13 @@ span#follows-you {
     background-color: #302f3a;
     border-radius: 5px;
     padding: 0px 4px;
-    font-size: 10px;
+    font-size: 9px;
     margin-bottom: 5px;
     color: rgb(192, 192, 192);
     max-width: 80px;
     max-height: 16px;
-    word-wrap:break-word
+    word-wrap:break-word;
+    border: 1px solid #ccccff0e;
 }
 
 div.user-titles {
@@ -229,14 +209,18 @@ div.user-titles {
 }
 
 div.user-titles *{
-    background-color: #17171d;
-    color: #b6bae5;
+    
     border-radius: 10px;
     font-size: 11px;
     padding: 2px 7px;
     font-weight: bold;
     text-align: center;
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+    
+    color: whitesmoke;
+
+    background-color: #292831;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.25);
 }
 
 div.user-title-admin {
@@ -244,7 +228,7 @@ div.user-title-admin {
 }
 
 div.user-title-supporter {
-    color: rgb(253, 114, 137);
+    color: whitesmoke;
 }
 
 div.user-title-dev {
@@ -285,8 +269,10 @@ span#follower_count {
 
 div.description-profile {
     text-align: center;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    padding: 10px;
+    background-color: #292831;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.25);
 }
 
 div.about-cells {
@@ -357,41 +343,52 @@ section.favorites-list {display: none;}
 div.first-row-lists {
     width: 100%;
     display: flex;
-    margin: 0px -15px;
+    margin: 0px 0px;
     padding: 5px 15px;
     font-size: 15px;
     transition: .5s ease-out;
     font-weight: 700;
     padding-bottom: 10px;
+
+    box-sizing: border-box;
 }
 
 .lists-title { min-width: 60%;}
 .lists-score { min-width: 20%; text-align: center;}
 .lists-progress { min-width: 20%; text-align: center;}
 
+div.anime-list-entry-wrapper {
+    background-color: #292831;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.25);
+    padding: 10px 0px;
+}
+
 div.anime-name-profile-list {
     width: 100%;
     display: flex;
-    margin: 0px -15px;
+    margin: 0px 0px;
     padding: 5px 15px;
     font-size: 15px;
     transition: .5s ease-out;
     position: relative;
     align-items: center;
+
+    box-sizing: border-box;
 }
 
 div.anime-name-profile-list:hover {
-    background-color: #17171dcb;
+    background-color: #17171d71;
     transition: .1s;
     cursor: pointer;
 }
 
 div.anime-name-profile-list:first-child {
-    margin-top: -10px;
+    margin-top: 0px;
 }
 
 div.anime-name-profile-list:last-child {
-    margin-bottom: -10px;
+    margin-bottom: 0px
 }
 
 div.left-image-lists {
@@ -402,7 +399,7 @@ div.left-image-lists {
     max-height: 150px;
     border-radius: 10px;
     overflow: hidden;
-    left: -115;
+    left: -120;
     bottom: -45; /* don't like this, but last child overflows otherwise */
     opacity: 0;
     visibility: hidden;
@@ -441,6 +438,8 @@ div.left-image-lists img {
     color: #a4a2b1;
     margin: 10px 0px 5px 0px;
     text-align: center;
+    
+    display: none;
 }
 
 .favorites-wrapper {
@@ -457,7 +456,7 @@ div.left-image-lists img {
     /* not having a min-width is important for div not breaking when padding declared */
     display: flex;
     flex-wrap: wrap;
-    padding-right: 0px;
+    
     justify-content: left;
     width: 100%;
 }
@@ -512,20 +511,25 @@ section.animanga-resumes div.profile-anime-overview, div.profile-manga-overview 
     max-height: 700px;
     width: 50%;
     box-sizing: border-box;
-
+/*
     border: 1px solid #b6bae5;
     background-color: #222129;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.253);*/
 
     margin-top: 10px;
     padding: 15px;
 
-    border-radius: 8px;
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.253);
+    background-color: #292831;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.25);
+    
 }
 
 div.profile-anime-overview {
     margin-right: 5px;
     display: flex;
+    
+    
 }
 
 div.profile-anime-overview div {
@@ -548,7 +552,8 @@ div.profile-manga-overview div {
     width: 33.3%;
     box-sizing: border-box;
     font-weight: 500;
-    font-size: 15px
+    font-size: 15px;
+    
 }
 
 div.profile-manga-overview span {
@@ -557,20 +562,24 @@ div.profile-manga-overview span {
 
 
 section.activity-feed {
-    max-height: 700px;
     min-width: 39%;
-    border: 1px solid #b6bae5;
+    max-width: 43.24%;
+    
+    
+    margin-left: 20px;
+    border-radius: 4px;
+    
+    /*
     background-color: #222129;
-    margin-left: 10px;
-    border-radius: 8px;
-    padding: 15px;
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.253);
+    border: 1px solid #b6bae5;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.253);*/
 
+    box-sizing: border-box;
     overflow-y: auto;
 }
 
 div.title-rightside {
-    height: 1.8em;
+    height: 2em;
     border-bottom: 1px solid #ccccff15;
     margin-bottom: 10px;
 }
@@ -580,9 +589,9 @@ div.activity-entry-wrapper {
     max-width: 100%;
     border-radius: 4px;
     overflow: hidden;
-    background-color: #222129;
     /*height: 100px;*/
-    border: 1px solid #222129;
+    /*background-color: #222129;
+    border: 1px solid #222129;*/
     padding: 5px 0px;
     box-sizing: border-box;
     margin-bottom: 10px;
@@ -697,6 +706,8 @@ p.activity-entry-content-desc-text-user-commentary { margin-bottom: 8px; }
     }
     section.animanga-resumes div.profile-anime-overview, div.profile-manga-overview {
         width: 100%!important;
+        border-bottom: 1px solid #ccccff15;
+        border-radius: 0px!important;
     }
 
     div.profile-anime-overview {
@@ -705,6 +716,7 @@ p.activity-entry-content-desc-text-user-commentary { margin-bottom: 8px; }
     }
     div.profile-manga-overview {
         margin-left: 0px!important;
+        border-left: 0px!important;
     }
 }
 
@@ -714,7 +726,8 @@ p.activity-entry-content-desc-text-user-commentary { margin-bottom: 8px; }
     }
     section.activity-feed {
         margin-left: 0px;
-        margin-top: 10px;
+        margin-top: 20px;
+        min-width: 100%!important;
     }
     div.username-profile-2 {
         display: flex;
@@ -744,6 +757,13 @@ p.activity-entry-content-desc-text-user-commentary { margin-bottom: 8px; }
 
 
 
+}
+
+@media (max-width: 430px) {
+    .list-profile ul{
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
 }
 
 @media (max-width: 614px) {

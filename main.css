@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 body {
-    background-color: #17171d; /* #222129 */
+    background-color: #17171d; /* #222129 17171d 212028*/ 
     font-family: nunito;
     image-rendering: -webkit-optimize-contrast;
     scrollbar-color: whitesmoke transparent;
@@ -54,9 +54,10 @@ div.web-container {
 }
 
 div.mid-wrapper {
-    max-width: 1057; /* 1200px 62.5% */
+    max-width: 1000; /* 1200px 62.5% */
     margin: auto;
-    
+    margin-bottom: 10px;
+
 }
 
 header {
@@ -66,14 +67,21 @@ header {
 
     color: whitesmoke;
     text-shadow: 1px 1px 1px black;
-    border-bottom: 2px solid #2b2935; /* 2b2935 */
-    /*border-image: #b6bae5;linear-gradient(90deg, #b6bae500 0%, #b6bae5 50%, #b6bae500 100%) 1;*/
+    background-color: #212028;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.247);
+    position: relative;
+    z-index: 1;
+    /*
+    border-bottom: 2px solid #2b2935; /* 2b2935 
     background-color: #222129;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.26);
+    */
+    /*border-image: #b6bae5;linear-gradient(90deg, #b6bae500 0%, #b6bae5 50%, #b6bae500 100%) 1;*/
+    
 }
 
 .inner-header {
-    max-width: 1057; /* 1199 */
+    max-width: 1000; /* 1199 */
     margin: 0 auto;
     display: flex;
     position: relative;
@@ -187,15 +195,19 @@ div.profile-dropdown {
 
     width: 144px;
     position: absolute;
-    right: -15;
-    margin-top: 75px;
+    right: 0;
+    margin-top: 60px;
+
+    border-top: none!important;
     
     border-radius: 4px;
-    box-shadow: 0 0px 5px rgba(0,0,0,.25);
-    border: 1px solid whitesmoke;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.247);
+    border: 1px solid rgba(182, 186, 229, 0.671);
    
     background: #1e1d24;
-    background: linear-gradient(to bottom, #222129 0%, #1c1c24 90%);
+    background: linear-gradient(to bottom, #212028 0%, #1c1c24 90%);
 /*
     opacity: 0;
     visibility: hidden; /*this is needed, otherwise, the element will actually display, just without opacity */
@@ -240,10 +252,7 @@ div.profile-dropdown a:hover {
 
 div.below-header {
     height: 20px;
-    max-width: 820px;
     background: #b6bae5;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
     text-align: center;
     line-height: 19px;
     font-size: 14px;
@@ -263,28 +272,37 @@ div.below-header a {
 
 div.body-wrapper {
     min-width: 100%;
-
+    max-width: 100%;
     box-sizing: border-box;
 
-    padding: 12px 0px 20px;
     color: whitesmoke;
-    text-shadow: 1px 1px black;
     
     word-wrap: break-word; /* not using this causes word overflowing */
     display: flex;
     justify-content: center;
+
+    background-color: #212028;
+    padding: 12px 10px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 3px rgba(0,0,0,.25)
 }
 
 footer {
-    min-width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
+    padding: 10px 0px;
+    border-radius: 8px;
+    /*
+    background-color: #222129;
+    border: 1px solid #b6bae5;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.253);*/
 }
 
 div.inner-footer {
-    width: 1200px;
+    width: 1000px;
     font-size: 11px;
     text-align: center;
     color: whitesmoke;
@@ -314,12 +332,11 @@ div.copyright-footer { color: #a4a2b1;}
 .favorites-img {
     min-width: 70px;
     max-width: 70px; /* 1000/8.5 = 117px */
-    max-height: 103.44px; /* 1500/8.5 = 176px */
     border-radius: 7px;
     /* overflow: hidden; */
     text-align: center;
-    margin-right: 9.8px; /* max margin for the sixth element to not move down when zooming out */
-    margin-bottom: 9.8px;
+    margin-right: 10px; /* max margin for the sixth element to not move down when zooming out */
+    margin-bottom: 10px;
     transition: .5s;
     position: relative;
     background-color: #222129;
@@ -399,18 +416,30 @@ div.copyright-footer { color: #a4a2b1;}
 
 @media (max-width: 1060px) {
     .body-wrapper{
-        padding: 12px 10px 20px!important;
+        padding: 12px 0px 10px!important;
+    }
+    .web-container {
+        padding: 0px 10px;
+        box-sizing: border-box;
+    }
+    footer {
+        margin: 0px 10px;
     }
 }
 
 @media (max-width: 721px) {
+
+    .web-container {
+        padding: 0px!important;
+    }
+
     .body-wrapper {
         display: block!important;
-        padding: 20px 10px!important;
+        padding: 10px 10px!important;
     }
 
     .inner-header {
-        margin: 0px 15px!important;
+        margin: 0px 10px!important;
     }
 
     .header-ul {
