@@ -25,7 +25,7 @@ div.anime-info-cover {
     min-width: 19.75%; /* 142.85px */
     max-width: 19.75%;
     overflow: hidden;
-    z-index: 1;
+    
 }
 
 div.anime-info-cover img {

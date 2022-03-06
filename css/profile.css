@@ -159,15 +159,12 @@ section.anime-list {
 div.first-row {
     text-align: left;
     max-width: 100%;
-    padding: 10px;
+    padding: 0px 0px 5px 6px;
     padding-top: 0px;
     border-bottom: 0px solid #ccccff15;
     position: relative;
     margin-bottom: 10px;
-
-    
-    
-    /*box-shadow: 0 4px 3px -3px rgba(0,0,0,.25);*/
+    box-shadow: 0 4px 3px -3px rgba(0,0,0,.25);
 }
 
 div.username-profile-container {
@@ -361,7 +358,7 @@ div.anime-list-entry-wrapper {
     background-color: #292831;
     border-radius: 10px;
     box-shadow: 0 1px 2px rgba(0,0,0,.25);
-    padding: 10px 0px;
+    padding: 0px 0px;
 }
 
 div.anime-name-profile-list {
@@ -384,11 +381,15 @@ div.anime-name-profile-list:hover {
 }
 
 div.anime-name-profile-list:first-child {
-    margin-top: 0px;
+    padding-top: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 div.anime-name-profile-list:last-child {
-    margin-bottom: 0px
+    padding-bottom: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 div.left-image-lists {
@@ -587,16 +588,21 @@ div.title-rightside {
 div.activity-entry-wrapper {
     display: flex;
     max-width: 100%;
-    border-radius: 4px;
     overflow: hidden;
     /*height: 100px;*/
     /*background-color: #222129;
     border: 1px solid #222129;*/
     padding: 5px 0px;
     box-sizing: border-box;
-    margin-bottom: 10px;
+    border-bottom: 1px solid #ccccff15;
+    margin-bottom: 5px;
     font-size: 14px;
     line-height: 17px;
+}
+
+div.activity-entry-wrapper:last-child {
+    margin-bottom: 0px!important;
+    border-bottom: 0px;
 }
 
 div.activity-wrapper:first-child { margin-bottom: none; }
@@ -706,8 +712,6 @@ p.activity-entry-content-desc-text-user-commentary { margin-bottom: 8px; }
     }
     section.animanga-resumes div.profile-anime-overview, div.profile-manga-overview {
         width: 100%!important;
-        border-bottom: 1px solid #ccccff15;
-        border-radius: 0px!important;
     }
 
     div.profile-anime-overview {
