@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+a {color: black;}
+
+body {
+    font-family: 'Fredoka', sans-serif;
+
+}
+
+div.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    line-height: 40px;
+    margin-top: 5px;
+}
+
+div.inner-header {
+    width: 900px;
+    max-height: 40px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+span.header-logo {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Segoe UI';
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+}
+
+div.header-list ul {display: flex;}
+div.header-list ul:hover li{opacity: 0.5;}
+div.header-list ul li {padding: 0px 20px; transition: .1s;}
+div.header-list ul li:hover {opacity: 1; cursor: pointer; transition: .1s;}
+
+div.header-account {min-height: 100%; display: flex; align-items: center;}
+div.header-account img {
+    max-height: 30px;
+    border-radius: 100%;
+    position: absolute;
+    right: 0;
+}
+div.header-account svg {margin-top: 3px; position: absolute; right: 5%;}
+div.header-account img:hover {cursor: pointer;}
+
+header div.inner-header div.header-account:hover div.header-list ul li {
+    opacity: 0.5;
+}
+
+
+section {
+    max-width: 560px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+section img {
+    max-height: 200px;
+    border-radius: 100%;
+    transition: .1s;
+    margin: 0 auto;
+}
+
+section img:hover {
+    transition: .1s;
+    cursor: pointer
+}
+
+div.linksypfp {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+div.linksypfp svg:hover {
+    transition: .1s;
+    filter: drop-shadow(0px 0px 3px rgba(0,0,0,0.25));
+    cursor: pointer;
+}
+
+.test {
+    position: absolute;
+    left: 0;
+}
+.test2 {
+    position: absolute;
+    left: 20%;
+}
+.test3 {
+    position: absolute;
+    right: 0;
+}
+.test4 {
+    position: absolute;
+    right: 20%;
+}
+
+div.nombre {
+    font-size: 24px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+    text-align: center;
+}
+
+div.nombre h1 {
+    margin: 0 auto;
+}
+
+div.follows-followers {
+    display: flex;
+}
+
+div.follows {margin-right: 20px;}
+
+div.desc {
+    margin-top: 15px;
+    text-align: center;
+}
+
+div.follower-row {
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+span.follower-row-span {
+    opacity: .7;
+    
+}
+
+div.lists-wrapper {
+    margin: 25px 0px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.anime-list-button {
+    color: white;
+    background-color: black;
+    padding: 3px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: .1s;
+    margin: 0px 5px;
+}
+
+div.anime-list-button:hover {
+    cursor: pointer;
+    margin-top: -4px;
+    transition: .1s;
+}
+
+div.anime-list {
+    width: 100%;
+}
+div.row {
+    display: flex;
+    padding: 0px 10px;
+}
+
+div.first {
+    margin-bottom: 10px;
+}
+div.title {min-width: 60%; box-sizing: border-box;}
+div.score {min-width: 20%; box-sizing: border-box; text-align: right;}
+div.progress {min-width: 20%; box-sizing: border-box; text-align: right;}
+
+
+
+
+.displaynone {
+    display: none;
+}
+
+footer {
+    
+    width: 100%;
+    padding: 5px 0px;
+}
+
+div.inner-footer {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.inner-footer ul {display: flex;}
+div.inner-footer ul li {padding: 5px 10px; transition: .1s; font-weight: bold;}
+div.inner-footer ul li:hover {color: rgb(63, 63, 63); cursor: pointer; transition: .1s;}
+div.copyright-footer {margin-bottom: 3px;}
