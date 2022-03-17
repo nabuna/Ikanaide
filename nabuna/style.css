@@ -151,6 +151,12 @@ span.follower-row-span {
     
 }
 
+span.lower {
+    font-size: 12px;
+    margin-top: 20px;
+    opacity: .6;
+}
+
 div.lists-wrapper {
     margin: 25px 0px 15px;
     display: flex;
@@ -196,7 +202,7 @@ div.progress {min-width: 20%; box-sizing: border-box; text-align: right;}
 }
 
 footer {
-    
+    background-color: whitesmoke;
     width: 100%;
     padding: 5px 0px;
 }
