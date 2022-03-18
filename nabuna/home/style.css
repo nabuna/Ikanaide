@@ -1,0 +1,133 @@
+
+
+.anime {max-width: 900px; margin: 0 auto;}
+
+.lower {display: none;}
+.anime-wrapper {min-width: 100%; max-width: 100%; margin-top: 20px; display: flex}
+
+.anime-wrapper-content {
+    min-width: 23%;
+    max-width: 23%;
+    padding: 0px 10px 0px 0px;
+
+    box-sizing: border-box;
+}
+.anime-wrapper-info {
+    min-width: 77%;
+    max-width: 77%;
+    padding-left: 5px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.anime-wrapper-content img {min-width: 100%; max-width: 100%; border-radius: 9px!important}
+.anime-wrapper-info img {min-width: 100%; max-width: 100%; border-radius: 9px!important}
+
+.add-to-list {
+    width: 100%;
+    background: black;
+    padding: 8px 0px;
+    text-align:center;
+    color: white;
+    border-radius: 9px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.add-to-favs {background-color: #DCD0FF; color: black;}
+.anime-wrapper-content-score-wrapper {display: flex; width: 100%; justify-content: space-between;}
+.anime-wrapper-content-score {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 47.4%;
+    
+    border-radius: 9px;
+    background: rgb(235, 235, 235);
+    padding: 5px 0px;
+}
+.anime-wrapper-content-score-text {
+    width: 100%;
+    text-align: center;
+    border-radius: 9px;
+    color: rgb(85, 85, 85);
+}
+.anime-score {font-size: 20px; font-weight: bold;}
+.anime-wrapper-content_info {
+    background-color: rgb(235, 235, 235);
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 9px;
+    font-size: 14px;
+    color: rgb(85, 85, 85);
+}
+
+.anime-wrapper-content_info span{float: right; font-weight: normal; color: black;}
+
+.anime-title {font-size: 32px; padding: 5px 0px 5px;}
+
+article {font-size: 14px; margin-bottom: 10px; background-color: rgb(235, 235, 235); padding: 10px; border-radius: 9px;}
+
+
+div.characters-wrapper {
+    margin-bottom: 15px;
+}
+
+div.characters-wrapper-content {
+    display: flex;
+    max-height: 65px;
+    margin-left: -1px; /* because entries have a border of 1px */
+    justify-content: space-between;
+    margin-bottom: 4px; /* para que la scrollbar no quede pegada */
+}
+
+div.characters-wrapper-title {
+    margin-bottom: 10px;
+}
+
+div.characters-wrapper-entry {
+    display: flex;
+    min-width: 31.9%; /* 31.9% */
+    max-width: 271.63px; /* 50% */
+    min-height: 60px;
+    max-height: 60px; /* 1500/25 */
+    border-radius: 7px;
+    overflow: hidden;
+    transition: .05s;
+    margin-right: 10px;
+    background-color: rgb(235, 235, 235);
+}
+
+div.characters-wrapper-entry:last-child {margin-right: 0px;}
+
+div.characters-wrapper-entry:hover {
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+
+div.characters-wrapper-entry-photo img{
+    max-height: 100%;
+    max-width: 40px;
+}
+
+div.characters-wrapper-entry-desc {
+    font-size: 12px;
+    overflow: hidden;
+    position: relative;
+    color: black;
+    text-shadow: none;
+    width: 100%;
+}
+
+div.characters-wrapper-entry-desc-name {
+    margin: 5px;
+    padding-right: 10px;
+}
+
+div.characters-wrapper-entry-desc-role {
+    margin: 5px;
+    position: absolute; /* should be a better way to do this. using absolute position on characters-wrapper-entry-desc-name makes characters-wrapper-entry not scalable. */
+    bottom: 0;
+}
+
