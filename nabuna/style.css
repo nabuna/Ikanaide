@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
 
 * {
     margin: 0;
@@ -42,6 +43,7 @@ span.header-logo {
     cursor: pointer;
     position: absolute;
     left: 0;
+    font-family: 'Berkshire Swash', cursive;
 }
 
 div.header-list ul {display: flex;}

@@ -3,7 +3,7 @@
 .anime {max-width: 900px; margin: 0 auto;}
 
 .lower {display: none;}
-.anime-wrapper {min-width: 100%; max-width: 100%; margin-top: 20px; display: flex}
+.anime-wrapper {min-width: 100%; max-width: 100%; margin-top: 20px; display: flex; margin-bottom: 20px;}
 
 .anime-wrapper-content {
     min-width: 23%;
@@ -52,6 +52,7 @@
     border-radius: 9px;
     color: rgb(85, 85, 85);
 }
+
 .anime-score {font-size: 20px; font-weight: bold;}
 .anime-wrapper-content_info {
     background-color: rgb(235, 235, 235);
@@ -61,6 +62,8 @@
     font-size: 14px;
     color: rgb(85, 85, 85);
 }
+.anime-wrapper-content_info a {color: rgb(85, 85, 85); transition: .1s;}
+.anime-wrapper-content_info a:hover {color: rgb(0, 0, 0);}
 
 .anime-wrapper-content_info span{float: right; font-weight: normal; color: black;}
 
@@ -69,42 +72,42 @@
 article {font-size: 14px; margin-bottom: 10px; background-color: rgb(235, 235, 235); padding: 10px; border-radius: 9px;}
 
 
-div.characters-wrapper {
+section.characters-wrapper {
     margin-bottom: 15px;
 }
 
 div.characters-wrapper-content {
     display: flex;
-    max-height: 65px;
-    margin-left: -1px; /* because entries have a border of 1px */
+    flex-wrap: wrap;
     justify-content: space-between;
+    max-width: 100%;
     margin-bottom: 4px; /* para que la scrollbar no quede pegada */
+    margin-top: -10px; /* characters-wrapper-entry tiene un margin-top de 10px para que la segunda fila no esté pegada, este -10px elimina el espacio extra en la primera fila. */
 }
 
 div.characters-wrapper-title {
     margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
 }
+
+span.characters-wrapper-title-right {opacity: .5; font-size: 14px; transition: .1s; cursor: pointer;}
+span.characters-wrapper-title-right:hover {opacity: 1; font-size: 14px;}
 
 div.characters-wrapper-entry {
     display: flex;
-    min-width: 31.9%; /* 31.9% */
+    min-width: 32.5%; /* 31.9% */
     max-width: 271.63px; /* 50% */
     min-height: 60px;
     max-height: 60px; /* 1500/25 */
-    border-radius: 7px;
+    border-radius: 9px;
     overflow: hidden;
     transition: .05s;
-    margin-right: 10px;
     background-color: rgb(235, 235, 235);
+    margin-top: 10px;
 }
 
 div.characters-wrapper-entry:last-child {margin-right: 0px;}
-
-div.characters-wrapper-entry:hover {
-    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
-    cursor: pointer;
-}
-
 
 div.characters-wrapper-entry-photo img{
     max-height: 100%;
@@ -129,5 +132,50 @@ div.characters-wrapper-entry-desc-role {
     margin: 5px;
     position: absolute; /* should be a better way to do this. using absolute position on characters-wrapper-entry-desc-name makes characters-wrapper-entry not scalable. */
     bottom: 0;
+    color: rgb(85, 85, 85);
 }
 
+.relations-content {
+    background-color: whitesmoke;
+    border-radius: 9px;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.relations-content a {transition: .1s;}
+.relations-content a:hover {color:rgb(85, 85, 85);}
+.relations-content-entry {display: flex;}
+.relations-sections {min-width: 20%; color:rgb(85, 85, 85);}
+
+.reviews-title {display: flex; justify-content: space-between;}
+.reviews-title-right a{color: rgb(85, 85, 85); transition: .1s; font-size: 14px;}
+.reviews-title-right a:hover{color: rgb(0, 0, 0);}
+.reviews-wrapper {
+    margin-top: -10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+.reviews-wrapper-entry {
+    margin-top: 10px;
+    min-width: 49%;
+    max-width: 49%;
+    
+    display: flex;
+    background-color: whitesmoke;
+    border-radius: 9px;
+    max-height: 91px; /* el height se rompe si no hago esto */
+}
+.reviews-wrapper-entry-picture {max-width: 18%;}
+.reviews-wrapper-entry-text {
+    padding: 10px;
+    font-size: 14px;
+    min-width: 80%;
+    box-sizing:border-box;
+    display: flex; flex-direction: column; justify-content: space-between;
+}
+.review-title-italic {font-style: italic;}
+.reviews-wrapper-entry-user a {color:rgb(85, 85, 85); transition: .1s;}
+.reviews-wrapper-entry-user a:hover {color:rgb(0, 0, 0);}
