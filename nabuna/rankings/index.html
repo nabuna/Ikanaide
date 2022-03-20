@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/ico/punpunico.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="https://storage.googleapis.com/non-spec-apps/mio-icons/latest/outline.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/rankings.css">
+    <title>Rankings · Ikanaide</title>
+</head>
+<body>
+    <script>0</script>
+    <div class="container">
+    <div class="body-container">
+
+
+        <header>
+            <div class="inner-header">
+                <span class="header-logo"><a href="/">ikanaide</a></span>
+                <div class="header-list">
+                    <ul>
+                        <a href="../home"><li>home</li></a>
+                        <a href="../anime"><li>anime</li></a>
+                        <a href="../manga"><li>manga</li></a>
+                        <a href="../rankings"><li>rankings</li></a>
+                        <a href="../community"><li>community</li></a>
+                    </ul>
+                </div>
+                <div class="header-account">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 24 24"><path d="M23.809 21.646l-6.205-6.205c1.167-1.605 1.857-3.579 1.857-5.711 0-5.365-4.365-9.73-9.731-9.73-5.365 0-9.73 4.365-9.73 9.73 0 5.366 4.365 9.73 9.73 9.73 2.034 0 3.923-.627 5.487-1.698l6.238 6.238 2.354-2.354zm-20.955-11.916c0-3.792 3.085-6.877 6.877-6.877s6.877 3.085 6.877 6.877-3.085 6.877-6.877 6.877c-3.793 0-6.877-3.085-6.877-6.877z"/></svg>
+                    <img src="../hanabi.jpg" id="butHeaderDropdown" onclick="pdToggle();">
+
+                    <div class="header-dropdown" id="headerDropdown">
+                        <ul>
+                            <a href="../index.html"><li><span class="material-icons">account_circle</span>profile</li></a>
+                            <li><span class="material-icons">people</span>friends</li>
+                            <li><span class="material-icons">settings</span>settings</li>
+                            <li><span class="material-icons">favorite</span>donate</li>
+                        </ul>
+                    </div>
+
+                    <script language="JavaScript">
+
+                        let profileDropdown = document.getElementById('headerDropdown');
+                        let butProfileDropdown = document.getElementById('butHeaderDropdown');
+
+                        pdToggle(); //so 2 clicks aren't needed
+
+                        function pdToggle() {
+                        
+                            if (profileDropdown.style.display === "none") {
+                                profileDropdown.style.display = "block"; 
+                            } else {
+                                profileDropdown.style.display = "none";
+                            }
+                        };
+            
+                    </script>
+
+                </div>
+            </div>
+        </header>
+
+        <section class="rankings">
+
+            <div class="ranking-title">
+                <ul class="ranking-choosing">
+                    <li class="top-animes">top animes</li>
+                    <li class="top-mangas">top mangas</li>
+                    <li class="top-vn">top visual novels</li>
+                    <li class="top-ost">top soundtracks</li>
+                    <li class="top-op">top openings</li>
+                    <li class="top-ed">top endings</li>
+                </ul>
+            </div>
+            <div class="rankings-list-data_type">
+                <ul>
+                    <li class="rankings-list-data_type-rank">rank</li>
+                    <li class="rankings-list-data_type-title">title</li>
+                    <li class="rankings-list-data_type-score">score</li>
+                    <li class="rankings-list-data_type-members">members</li>
+                </ul>
+            </div>
+            <div class="ranking-wrapper">
+                <div class="ranking-wrapper-entry">
+                    <div class="ranking-wrapper-entry-rank">#1</div>
+                    <div class="ranking-wrapper-entry-picture"><img src="../img/punpun.jpg" alt=""></div>
+                    <div class="ranking-wrapper-entry-text"><a href="../anime">Oyasumi Punpun</a></div>
+                    <div class="ranking-wrapper-entry-score">9.32</div>
+                    <div class="ranking-wrapper-entry-members">16.152</div>
+                    <div class="ranking-wrapper-entry-addtolist">add to list</div>
+                    <div class="ranking-wrapper-entry-favourite">favourite</div>
+                    <div class="ranking-wrapper-entry-options"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512"><!--! Font Awesome Pro 6.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M64 360C94.93 360 120 385.1 120 416C120 446.9 94.93 472 64 472C33.07 472 8 446.9 8 416C8 385.1 33.07 360 64 360zM64 200C94.93 200 120 225.1 120 256C120 286.9 94.93 312 64 312C33.07 312 8 286.9 8 256C8 225.1 33.07 200 64 200zM64 152C33.07 152 8 126.9 8 96C8 65.07 33.07 40 64 40C94.93 40 120 65.07 120 96C120 126.9 94.93 152 64 152z"/></svg></div>
+                </div>
+
+                <div class="ranking-wrapper-entry">
+                    <div class="ranking-wrapper-entry-rank">#2</div>
+                    <div class="ranking-wrapper-entry-picture"><img src="../img/punpun.jpg" alt=""></div>
+                    <div class="ranking-wrapper-entry-text"><a href="../anime">Oyasumi Punpun</a></div>
+                    <div class="ranking-wrapper-entry-score">9.32</div>
+                    <div class="ranking-wrapper-entry-members">16.152</div>
+                    <div class="ranking-wrapper-entry-addtolist">add to list</div>
+                    <div class="ranking-wrapper-entry-favourite">favourite</div>
+                    <div class="ranking-wrapper-entry-options"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512"><!--! Font Awesome Pro 6.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M64 360C94.93 360 120 385.1 120 416C120 446.9 94.93 472 64 472C33.07 472 8 446.9 8 416C8 385.1 33.07 360 64 360zM64 200C94.93 200 120 225.1 120 256C120 286.9 94.93 312 64 312C33.07 312 8 286.9 8 256C8 225.1 33.07 200 64 200zM64 152C33.07 152 8 126.9 8 96C8 65.07 33.07 40 64 40C94.93 40 120 65.07 120 96C120 126.9 94.93 152 64 152z"/></svg></div>
+                </div>
+
+                <div class="ranking-wrapper-entry">
+                    <div class="ranking-wrapper-entry-rank">#3</div>
+                    <div class="ranking-wrapper-entry-picture"><img src="../img/punpun.jpg" alt=""></div>
+                    <div class="ranking-wrapper-entry-text"><a href="../anime">Oyasumi Punpun</a></div>
+                    <div class="ranking-wrapper-entry-score">9.32</div>
+                    <div class="ranking-wrapper-entry-members">16.152</div>
+                    <div class="ranking-wrapper-entry-addtolist">add to list</div>
+                    <div class="ranking-wrapper-entry-favourite">favourite</div>
+                    <div class="ranking-wrapper-entry-options"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512"><!--! Font Awesome Pro 6.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M64 360C94.93 360 120 385.1 120 416C120 446.9 94.93 472 64 472C33.07 472 8 446.9 8 416C8 385.1 33.07 360 64 360zM64 200C94.93 200 120 225.1 120 256C120 286.9 94.93 312 64 312C33.07 312 8 286.9 8 256C8 225.1 33.07 200 64 200zM64 152C33.07 152 8 126.9 8 96C8 65.07 33.07 40 64 40C94.93 40 120 65.07 120 96C120 126.9 94.93 152 64 152z"/></svg></div>
+                </div>
+
+                <div class="ranking-wrapper-entry">
+                    <div class="ranking-wrapper-entry-rank">#4</div>
+                    <div class="ranking-wrapper-entry-picture"><img src="../img/punpun.jpg" alt=""></div>
+                    <div class="ranking-wrapper-entry-text"><a href="../anime">Oyasumi Punpun</a></div>
+                    <div class="ranking-wrapper-entry-score">9.32</div>
+                    <div class="ranking-wrapper-entry-members">16.152</div>
+                    <div class="ranking-wrapper-entry-addtolist">add to list</div>
+                    <div class="ranking-wrapper-entry-favourite">favourite</div>
+                    <div class="ranking-wrapper-entry-options"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512"><!--! Font Awesome Pro 6.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M64 360C94.93 360 120 385.1 120 416C120 446.9 94.93 472 64 472C33.07 472 8 446.9 8 416C8 385.1 33.07 360 64 360zM64 200C94.93 200 120 225.1 120 256C120 286.9 94.93 312 64 312C33.07 312 8 286.9 8 256C8 225.1 33.07 200 64 200zM64 152C33.07 152 8 126.9 8 96C8 65.07 33.07 40 64 40C94.93 40 120 65.07 120 96C120 126.9 94.93 152 64 152z"/></svg></div>
+                </div>
+
+                <div class="ranking-wrapper-entry">
+                    <div class="ranking-wrapper-entry-rank">#5</div>
+                    <div class="ranking-wrapper-entry-picture"><img src="../img/punpun.jpg" alt=""></div>
+                    <div class="ranking-wrapper-entry-text"><a href="../anime">Oyasumi Punpun</a></div>
+                    <div class="ranking-wrapper-entry-score">9.32</div>
+                    <div class="ranking-wrapper-entry-members">16.152</div>
+                    <div class="ranking-wrapper-entry-addtolist">add to list</div>
+                    <div class="ranking-wrapper-entry-favourite">favourite</div>
+                    <div class="ranking-wrapper-entry-options"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512"><!--! Font Awesome Pro 6.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M64 360C94.93 360 120 385.1 120 416C120 446.9 94.93 472 64 472C33.07 472 8 446.9 8 416C8 385.1 33.07 360 64 360zM64 200C94.93 200 120 225.1 120 256C120 286.9 94.93 312 64 312C33.07 312 8 286.9 8 256C8 225.1 33.07 200 64 200zM64 152C33.07 152 8 126.9 8 96C8 65.07 33.07 40 64 40C94.93 40 120 65.07 120 96C120 126.9 94.93 152 64 152z"/></svg></div>
+                </div>
+                
+                <div class="ranking-wrapper-entry">
+                    <div class="ranking-wrapper-entry-rank">#6</div>
+                    <div class="ranking-wrapper-entry-picture"><img src="../img/punpun.jpg" alt=""></div>
+                    <div class="ranking-wrapper-entry-text"><a href="../anime">Oyasumi Punpun</a></div>
+                    <div class="ranking-wrapper-entry-score">9.32</div>
+                    <div class="ranking-wrapper-entry-members">16.152</div>
+                    <div class="ranking-wrapper-entry-addtolist">add to list</div>
+                    <div class="ranking-wrapper-entry-favourite">favourite</div>
+                    <div class="ranking-wrapper-entry-options"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512"><!--! Font Awesome Pro 6.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M64 360C94.93 360 120 385.1 120 416C120 446.9 94.93 472 64 472C33.07 472 8 446.9 8 416C8 385.1 33.07 360 64 360zM64 200C94.93 200 120 225.1 120 256C120 286.9 94.93 312 64 312C33.07 312 8 286.9 8 256C8 225.1 33.07 200 64 200zM64 152C33.07 152 8 126.9 8 96C8 65.07 33.07 40 64 40C94.93 40 120 65.07 120 96C120 126.9 94.93 152 64 152z"/></svg></div>
+                </div>
+
+                <div class="ranking-wrapper-entry">
+                    <div class="ranking-wrapper-entry-rank">#7</div>
+                    <div class="ranking-wrapper-entry-picture"><img src="../img/punpun.jpg" alt=""></div>
+                    <div class="ranking-wrapper-entry-text"><a href="../anime">Oyasumi Punpun</a></div>
+                    <div class="ranking-wrapper-entry-score">9.32</div>
+                    <div class="ranking-wrapper-entry-members">16.152</div>
+                    <div class="ranking-wrapper-entry-addtolist">add to list</div>
+                    <div class="ranking-wrapper-entry-favourite">favourite</div>
+                    <div class="ranking-wrapper-entry-options"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512"><!--! Font Awesome Pro 6.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M64 360C94.93 360 120 385.1 120 416C120 446.9 94.93 472 64 472C33.07 472 8 446.9 8 416C8 385.1 33.07 360 64 360zM64 200C94.93 200 120 225.1 120 256C120 286.9 94.93 312 64 312C33.07 312 8 286.9 8 256C8 225.1 33.07 200 64 200zM64 152C33.07 152 8 126.9 8 96C8 65.07 33.07 40 64 40C94.93 40 120 65.07 120 96C120 126.9 94.93 152 64 152z"/></svg></div>
+                </div>
+
+                <div class="ranking-wrapper-entry">
+                    <div class="ranking-wrapper-entry-rank">#8</div>
+                    <div class="ranking-wrapper-entry-picture"><img src="../img/punpun.jpg" alt=""></div>
+                    <div class="ranking-wrapper-entry-text"><a href="../anime">Oyasumi Punpun</a></div>
+                    <div class="ranking-wrapper-entry-score">9.32</div>
+                    <div class="ranking-wrapper-entry-members">16.152</div>
+                    <div class="ranking-wrapper-entry-addtolist">add to list</div>
+                    <div class="ranking-wrapper-entry-favourite">favourite</div>
+                    <div class="ranking-wrapper-entry-options"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512"><!--! Font Awesome Pro 6.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M64 360C94.93 360 120 385.1 120 416C120 446.9 94.93 472 64 472C33.07 472 8 446.9 8 416C8 385.1 33.07 360 64 360zM64 200C94.93 200 120 225.1 120 256C120 286.9 94.93 312 64 312C33.07 312 8 286.9 8 256C8 225.1 33.07 200 64 200zM64 152C33.07 152 8 126.9 8 96C8 65.07 33.07 40 64 40C94.93 40 120 65.07 120 96C120 126.9 94.93 152 64 152z"/></svg></div>
+                </div>
+
+                <div class="ranking-wrapper-entry">
+                    <div class="ranking-wrapper-entry-rank">#9</div>
+                    <div class="ranking-wrapper-entry-picture"><img src="../img/punpun.jpg" alt=""></div>
+                    <div class="ranking-wrapper-entry-text"><a href="../anime">Oyasumi Punpun</a></div>
+                    <div class="ranking-wrapper-entry-score">9.32</div>
+                    <div class="ranking-wrapper-entry-members">16.152</div>
+                    <div class="ranking-wrapper-entry-addtolist">add to list</div>
+                    <div class="ranking-wrapper-entry-favourite">favourite</div>
+                    <div class="ranking-wrapper-entry-options"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512"><!--! Font Awesome Pro 6.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M64 360C94.93 360 120 385.1 120 416C120 446.9 94.93 472 64 472C33.07 472 8 446.9 8 416C8 385.1 33.07 360 64 360zM64 200C94.93 200 120 225.1 120 256C120 286.9 94.93 312 64 312C33.07 312 8 286.9 8 256C8 225.1 33.07 200 64 200zM64 152C33.07 152 8 126.9 8 96C8 65.07 33.07 40 64 40C94.93 40 120 65.07 120 96C120 126.9 94.93 152 64 152z"/></svg></div>
+                </div>
+
+                <div class="ranking-wrapper-entry">
+                    <div class="ranking-wrapper-entry-rank">#10</div>
+                    <div class="ranking-wrapper-entry-picture"><img src="../img/punpun.jpg" alt=""></div>
+                    <div class="ranking-wrapper-entry-text"><a href="../anime">Oyasumi Punpun</a></div>
+                    <div class="ranking-wrapper-entry-score">9.32</div>
+                    <div class="ranking-wrapper-entry-members">16.152</div>
+                    <div class="ranking-wrapper-entry-addtolist">add to list</div>
+                    <div class="ranking-wrapper-entry-favourite">favourite</div>
+                    <div class="ranking-wrapper-entry-options"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512"><!--! Font Awesome Pro 6.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M64 360C94.93 360 120 385.1 120 416C120 446.9 94.93 472 64 472C33.07 472 8 446.9 8 416C8 385.1 33.07 360 64 360zM64 200C94.93 200 120 225.1 120 256C120 286.9 94.93 312 64 312C33.07 312 8 286.9 8 256C8 225.1 33.07 200 64 200zM64 152C33.07 152 8 126.9 8 96C8 65.07 33.07 40 64 40C94.93 40 120 65.07 120 96C120 126.9 94.93 152 64 152z"/></svg></div>
+                </div>
+            </div>
+
+        </section>
+
+
+    </div>
+
+    <footer>
+        <div class="inner-footer">
+            <div class="footer-links">
+                <ul>
+                    <li>Terms</li>
+                    <li>Privacy</li>
+                    <li>Contact</li>
+                    <li>Donate</li>
+                    <li>Twitter</li>
+                    <li>Logout</li>
+                </ul>
+            </div>
+            <div class="copyright-footer">© Ikanaide All rights reserved.</div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

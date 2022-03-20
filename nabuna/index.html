@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="https://storage.googleapis.com/non-spec-apps/mio-icons/latest/outline.css">
+    <link rel="icon" href="../img/ico/punpunico.png">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Profile · Ikanaide</title>
 </head>
 <body>
     <script>0</script>
@@ -18,16 +21,44 @@
                 <span class="header-logo"><a href="/">ikanaide</a></span>
                 <div class="header-list">
                     <ul>
-                        <a href="home/index.html"><li>home</li></a>
+                        <a href="home"><li>home</li></a>
                         <a href="anime"><li>anime</li></a>
                         <a href="manga"><li>manga</li></a>
-                        <a href="home/index.html"><li>rankings</li></a>
-                        <a href="home/index.html"><li>community</li></a>
+                        <a href="rankings"><li>rankings</li></a>
+                        <a href="community"><li>community</li></a>
                     </ul>
                 </div>
                 <div class="header-account">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 24 24"><path d="M23.809 21.646l-6.205-6.205c1.167-1.605 1.857-3.579 1.857-5.711 0-5.365-4.365-9.73-9.731-9.73-5.365 0-9.73 4.365-9.73 9.73 0 5.366 4.365 9.73 9.73 9.73 2.034 0 3.923-.627 5.487-1.698l6.238 6.238 2.354-2.354zm-20.955-11.916c0-3.792 3.085-6.877 6.877-6.877s6.877 3.085 6.877 6.877-3.085 6.877-6.877 6.877c-3.793 0-6.877-3.085-6.877-6.877z"/></svg>
-                    <img src="hanabi.jpg">
+                    <img src="hanabi.jpg" id="butHeaderDropdown" onclick="pdToggle();">
+
+                    <div class="header-dropdown" id="headerDropdown">
+                        <ul>
+                            <a href="index.html"><li><span class="material-icons">account_circle</span>profile</li></a>
+                            <li><span class="material-icons">people</span>friends</li>
+                            <li><span class="material-icons">settings</span>settings</li>
+                            <li><span class="material-icons">favorite</span>donate</li>
+                        </ul>
+                    </div>
+
+                    <script language="JavaScript">
+
+                        let profileDropdown = document.getElementById('headerDropdown');
+                        let butProfileDropdown = document.getElementById('butHeaderDropdown');
+
+                        pdToggle(); //so 2 clicks aren't needed
+
+                        function pdToggle() {
+                        
+                            if (profileDropdown.style.display === "none") {
+                                profileDropdown.style.display = "block"; 
+                            } else {
+                                profileDropdown.style.display = "none";
+                            }
+                        };
+            
+                    </script>
+
                 </div>
             </div>
         </header>

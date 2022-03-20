@@ -74,6 +74,23 @@ header div.inner-header div.header-account:hover div.header-list ul li {
     opacity: 0.5;
 }
 
+.header-dropdown {
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.20);
+    border-radius: 6px;
+    width: 190px;
+    position: absolute;
+    margin-top: 230px;
+    right: -2%;
+    display: none;
+    padding: 8px 0px;
+    z-index: 9999;
+}
+
+.header-dropdown li {display: flex; align-items: center; padding: 0px 100px 0px 20px; transition: .05s; cursor: pointer}
+.header-dropdown li:hover {background-color: rgb(230, 230, 230);}
+.header-dropdown li span {margin-right: 10px; color: black; font-size: 23px;}
+
 
 section.profile {
     max-width: 560px;
