@@ -1,0 +1,89 @@
+.profile {max-width: 900px; margin: 0 auto; display: flex; margin-top: 20px;}
+.profile-left {min-width: 23%; max-width: 23%; padding-right: 10px; box-sizing: border-box;}
+.profile-left img {max-width: 100%; border-radius: 9px;}
+.profile-left-buttons {
+    min-width: 100%;
+    padding: 8px 0px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 9px;
+    cursor: pointer;
+}
+.add {background-color: #dbc7ff; color: black; transition: .1s;}
+.add:hover {background-color: #e3d4ff;}
+.message {background-color: black; color: white; transition: .1s;}
+.message:hover {background-color: rgb(31, 31, 31);}
+.profile-left-wrapper {
+    background-color: whitesmoke;
+    margin-top: 10px;
+    border-radius: 9px;
+    padding: 10px;
+    font-size: 14px;
+}
+.profile-resume-row {color: rgb(85, 85, 85); display: flex; justify-content: space-between; flex-wrap: wrap;}
+.profile-resume-row span { color: black;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.profile-right {min-width: 77%; max-width: 77%; padding-left: 5px; box-sizing: border-box;}
+.profile-right img {max-width: 100%; border-radius: 9px;}
+.profile-right-username {padding: 5px 0px; font-size: 32px;}
+.profile-right-data_choosing {
+    border-radius: 9px;
+    background-color: whitesmoke;
+    padding: 10px 15px;
+}
+.profile-right-data_choosing a {color: inherit;}
+.profile-right-data_choosing ul {display: flex; justify-content: space-between; color: rgb(85, 85, 85)}
+.profile-right-data_choosing li {transition: .1s; cursor: pointer}
+.profile-right-data_choosing li:hover {color: black}
+.profile-right-biography-title {margin: 10px 0px;}
+.profile-right-biography {
+    border-radius: 9px;
+    background-color: whitesmoke;
+    padding: 10px 15px;
+    margin-top: 10px;
+    text-align: center;
+}
+.profile-right-favorite-anime {margin-top: 10px;}
+
+
+.profile-right-favorite-anime-wrapper {
+    border-radius: 9px;
+    background-color: whitesmoke;
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.profile-right-favorite-anime-wrapper-title {margin-bottom: 10px; color: rgb(85, 85, 85);}
+.profile-right-favorite-anime-wrapper-entry-wrapper {display: flex; justify-content: space-between;}
+.profile-right-favorite-anime-wrapper-entry {
+    width: 66.6px;
+    height: 100px;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.profile-right-favorite-anime-wrapper-entry:last-child {margin-right: 0px!important;}
+.activity-wrapper {display: flex; flex-wrap: wrap; justify-content: space-between;}
+.activity-wrapper-entry {
+    background-color: whitesmoke;
+    border-radius: 9px;
+    min-width: 49.25%;
+    max-width: 49.25%;
+    height: 100px;
+    margin-top: 10px;
+}

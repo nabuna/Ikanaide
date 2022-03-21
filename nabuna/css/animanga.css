@@ -3,7 +3,7 @@
 .anime {max-width: 900px; margin: 0 auto;}
 
 .lower {display: none;}
-.anime-wrapper {min-width: 100%; max-width: 100%; margin-top: 20px; display: flex; margin-bottom: 20px;}
+.anime-wrapper {min-width: 100%; max-width: 100%; margin-top: 20px; display: flex;}
 
 .anime-wrapper-content {
     min-width: 23%;
@@ -33,7 +33,8 @@
     margin-top: 10px;
     cursor: pointer;
 }
-.add-to-favs {background-color: #dbc7ff; color: black;}
+.add-to-favs {background-color: #dbc7ff; color: black; transition: .1s;}
+.add-to-favs:hover {background-color: #e3d4ff;}
 .anime-wrapper-content-score-wrapper {display: flex; width: 100%; justify-content: space-between;}
 .anime-wrapper-content-score {
     margin-top: 10px;
@@ -97,7 +98,7 @@ div.characters-wrapper-title {
 div.characters-wrapper-entry {
     display: flex;
     min-width: 32.5%; /* 31.9% */
-    max-width: 271.63px; /* 50% */
+    max-width: 32.5%; /* 50% */
     min-height: 60px;
     max-height: 60px; /* 1500/25 */
     border-radius: 9px;

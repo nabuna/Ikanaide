@@ -12,7 +12,7 @@ a {color: black;}
 
 body {
     font-family: 'Fredoka', sans-serif;
-
+    overflow-y: scroll;
 }
 
 div.container {
@@ -66,7 +66,7 @@ div.header-account svg:hover {
     filter: drop-shadow(0px 0px 3px rgba(0,0,0,0.25));
     cursor: pointer;
 }
-div.header-account img:active {
+div.header-account img:hover {
     border: 1px solid black;
 }
 
@@ -78,10 +78,10 @@ header div.inner-header div.header-account:hover div.header-list ul li {
     background-color: whitesmoke;
     box-shadow: 0px 0px 3px rgba(0,0,0,0.20);
     border-radius: 6px;
-    width: 190px;
     position: absolute;
-    margin-top: 230px;
     right: -2%;
+    top: 0;
+    margin-top: 50px;
     display: none;
     padding: 8px 0px;
     z-index: 9999;
@@ -91,7 +91,7 @@ header div.inner-header div.header-account:hover div.header-list ul li {
 .header-dropdown li:hover {background-color: rgb(230, 230, 230);}
 .header-dropdown li span {margin-right: 10px; color: black; font-size: 23px;}
 
-
+/*
 section.profile {
     max-width: 560px;
     margin: 0 auto;
@@ -226,12 +226,13 @@ div.progress {min-width: 20%; box-sizing: border-box; text-align: right;}
 
 .displaynone {
     display: none;
-}
+}*/
 
 footer {
     background-color: whitesmoke;
     width: 100%;
     padding: 5px 0px;
+    margin-top: 20px;
 }
 
 div.inner-footer {

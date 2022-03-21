@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <link rel="stylesheet" href="https://storage.googleapis.com/non-spec-apps/mio-icons/latest/outline.css">
-    <link rel="icon" href="img/ico/punpunico.png">
-    <link rel="stylesheet" href="css/profile.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../img/ico/punpunico.png">
+    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../style.css">
     <title>Profile · Ikanaide</title>
 </head>
 <body>
@@ -22,20 +22,20 @@
                 <span class="header-logo"><a href="/">ikanaide</a></span>
                 <div class="header-list">
                     <ul>
-                        <a href="home"><li>home</li></a>
-                        <a href="anime"><li>anime</li></a>
-                        <a href="manga"><li>manga</li></a>
-                        <a href="rankings"><li>rankings</li></a>
-                        <a href="community"><li>community</li></a>
+                        <a href="../home"><li>home</li></a>
+                        <a href="../anime"><li>anime</li></a>
+                        <a href="../manga"><li>manga</li></a>
+                        <a href="../rankings"><li>rankings</li></a>
+                        <a href="../community"><li>community</li></a>
                     </ul>
                 </div>
                 <div class="header-account">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 24 24"><path d="M23.809 21.646l-6.205-6.205c1.167-1.605 1.857-3.579 1.857-5.711 0-5.365-4.365-9.73-9.731-9.73-5.365 0-9.73 4.365-9.73 9.73 0 5.366 4.365 9.73 9.73 9.73 2.034 0 3.923-.627 5.487-1.698l6.238 6.238 2.354-2.354zm-20.955-11.916c0-3.792 3.085-6.877 6.877-6.877s6.877 3.085 6.877 6.877-3.085 6.877-6.877 6.877c-3.793 0-6.877-3.085-6.877-6.877z"/></svg>
-                    <img src="hanabi.jpg" id="butHeaderDropdown" onclick="pdToggle();">
+                    <img src="../hanabi.jpg" id="butHeaderDropdown" onclick="pdToggle();">
 
                     <div class="header-dropdown" id="headerDropdown">
                         <ul>
-                            <a href="index.html"><li><span class="material-icons">account_circle</span>profile</li></a>
+                            <a href=".."><li><span class="material-icons">account_circle</span>profile</li></a>
                             <li><span class="material-icons">people</span>friends</li>
                             <li><span class="material-icons">settings</span>settings</li>
                             <li><span class="material-icons">favorite</span>donate</li>
@@ -67,7 +67,7 @@
         <section class="profile">
 
             <div class="profile-left">
-                <div class="profile-pfp"><img src="img/profile-icon/hanabi1.jpg" alt=""></div>
+                <div class="profile-pfp"><img src="../img/profile-icon/hanabi1.jpg" alt=""></div>
                 <div class="profile-left-buttons add">add</div>
                 <div class="profile-left-buttons message">message</div>
                 <div class="profile-left-wrapper profile-resume">
@@ -136,32 +136,77 @@
             </div>
 
             <div class="profile-right">
-                <div class="profile-header"><img src="img/profile-icon/header.jpg" alt=""></div>
+                <div class="profile-header"><img src="../img/profile-icon/header.jpg" alt=""></div>
                 <div class="profile-right-username"><b>user2391</b></div>
                 <div class="profile-right-data_choosing">
                     <ul>
-                        <li id="li_overview"  class="li-overview" style="color: black;">overview</li>
+                        <a href=".."><li id="li_overview"  class="li-overview">overview</li></a>
                         <li id="li_animelist" class="li-animelist">anime list</li>
                         <li id="li_mangalist" class="li-mangalist">manga list</li>
                         <li id="li_reviews"   class="li-reviews">reviews</li>
-                        <a href="favorites"><li id="li_favorites" class="li-favorites">favorites</li></a>
+                        <li id="li_favorites" class="li-favorites" style="color: black">favorites</li>
                     </ul>
                 </div>
                 <!--<div class="profile-right-biography-title"><h4>biography</h4></div>-->
-                <div class="profile-right-biography">
-                    <p>Texto de ejemplo Texto de ejemplo Texto de ejemplo Texto de ejemplo Texto de ejemplo Texto de ejemplo Texto de ejemplo Texto de ejemplo Texto de ejemplo Texto de ejemplo Texto de ejemplo Texto de ejemplo Texto de ejemplo Texto de ejemplo Texto de ejemplo</p>
+
+                <div class="profile-right-favorite-anime">
+                    <!--<div class="profile-right-favorite-anime-title"><h4>anime</h4></div>-->
+                    <div class="profile-right-favorite-anime-wrapper">
+                        <div class="profile-right-favorite-anime-wrapper-title">anime</div>
+                        <div class="profile-right-favorite-anime-wrapper-entry-wrapper">
+                            <div class="profile-right-favorite-anime-wrapper-entry"><img src="../img/hxh.jpg" alt=""></div>
+                            <div class="profile-right-favorite-anime-wrapper-entry"><img src="../img/evangelion.jpg" alt=""></div>
+                            <div class="profile-right-favorite-anime-wrapper-entry"><img src="../img/violet.webp" alt=""></div>
+                            <div class="profile-right-favorite-anime-wrapper-entry"><img src="../img/gintama.webp" alt=""></div>
+                            <div class="profile-right-favorite-anime-wrapper-entry"><img src="../img/knk.jpg" alt=""></div>
+                            <div class="profile-right-favorite-anime-wrapper-entry"><img src="../img/fate.jpg" alt=""></div>
+                            <div class="profile-right-favorite-anime-wrapper-entry"><img src="../img/nhk.webp" alt=""></div>
+                            <div class="profile-right-favorite-anime-wrapper-entry"><img src="../img/madoka.webp" alt=""></div>
+                        </div>
+                    </div>
+
+                    <div class="profile-right-favorite-anime-wrapper">
+                        <div class="profile-right-favorite-anime-wrapper-title">manga</div>
+                        <div class="profile-right-favorite-anime-wrapper-entry-wrapper">
+                            <div class="profile-right-favorite-anime-wrapper-entry"><img src="../img/punpun.jpg" alt=""></div>
+                            <div class="profile-right-favorite-anime-wrapper-entry"><img src="../img/vinland.jpeg" alt=""></div>
+                            <div class="profile-right-favorite-anime-wrapper-entry"><img src="../img/berserk.jpg" alt=""></div>
+                            <div class="profile-right-favorite-anime-wrapper-entry"><img src="../img/one_piece.webp" alt=""></div>
+                            <div class="profile-right-favorite-anime-wrapper-entry"><img src="../img/opm.jpg" alt=""></div>
+                            <div class="profile-right-favorite-anime-wrapper-entry"><img src="../img/shingeki.webp" alt=""></div>
+                            <div class="profile-right-favorite-anime-wrapper-entry"><img src="../img/kny.jpg" alt=""></div>
+                            <div class="profile-right-favorite-anime-wrapper-entry"><img src="../img/chainsaw.jpg" alt=""></div>
+                        </div>
+                    </div>
+
+                    <div class="profile-right-favorite-anime-wrapper">
+                        <div class="profile-right-favorite-anime-wrapper-title">characters</div>
+                        <div class="profile-right-favorite-anime-wrapper-entry-wrapper">
+                            <div class="profile-right-favorite-anime-wrapper-entry"><img src="../img/characters/1.jpg" alt=""></div>
+                            <div class="profile-right-favorite-anime-wrapper-entry"><img src="../img/characters/aiko.jpg" alt=""></div>
+                            <div class="profile-right-favorite-anime-wrapper-entry"><img src="../img/characters/askeladd.jpg" alt=""></div>
+                            <div class="profile-right-favorite-anime-wrapper-entry"><img src="../img/characters/gintoki.jpg" alt=""></div>
+                            <div class="profile-right-favorite-anime-wrapper-entry"><img src="../img/characters/kagura3.jpg" alt=""></div>
+                            <div class="profile-right-favorite-anime-wrapper-entry"><img src="../img/characters/midori.jpg" alt=""></div>
+                            <div class="profile-right-favorite-anime-wrapper-entry"><img src="../img/characters/okita.jpg" alt=""></div>
+                            <div class="profile-right-favorite-anime-wrapper-entry"><img src="../img/characters/sachi.jpg" alt=""></div>
+                        </div>
+                    </div>
+
+                    <div class="profile-right-favorite-anime-wrapper">
+                        <div class="profile-right-favorite-anime-wrapper-title">people</div>
+                        <div class="profile-right-favorite-anime-wrapper-entry-wrapper">
+                            <div class="profile-right-favorite-anime-wrapper-entry"><img src="../img/people/1.jpg" alt=""></div>
+                            <div class="profile-right-favorite-anime-wrapper-entry"><img src="../img/people/2.jpg" alt=""></div>
+                            <div class="profile-right-favorite-anime-wrapper-entry"><img src="../img/people/3.jpg" alt=""></div>
+                            <div class="profile-right-favorite-anime-wrapper-entry"><img src="../img/people/4.jpg" alt=""></div>
+                            <div class="profile-right-favorite-anime-wrapper-entry"><img src="../img/people/5.jpg" alt=""></div>
+                            <div class="profile-right-favorite-anime-wrapper-entry"><img src="../img/people/1.jpg" alt=""></div>
+                            <div class="profile-right-favorite-anime-wrapper-entry"><img src="../img/people/2.jpg" alt=""></div>
+                            <div class="profile-right-favorite-anime-wrapper-entry"><img src="../img/people/3.jpg" alt=""></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="activity-wrapper">
-                    <div class="activity-wrapper-entry"></div>
-                    <div class="activity-wrapper-entry"></div>
-                    <div class="activity-wrapper-entry"></div>
-                    <div class="activity-wrapper-entry"></div>
-                    <div class="activity-wrapper-entry"></div>
-                    <div class="activity-wrapper-entry"></div>
-                    <div class="activity-wrapper-entry"></div>
-                    <div class="activity-wrapper-entry"></div>
-                </div>
-                
             </div>
 
 
