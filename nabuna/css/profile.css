@@ -14,7 +14,7 @@
 .message {background-color: black; color: white; transition: .1s;}
 .message:hover {background-color: rgb(31, 31, 31);}
 .profile-left-wrapper {
-    background-color: whitesmoke;
+    background-color: rgb(235, 235, 235);
     margin-top: 10px;
     border-radius: 9px;
     padding: 10px;
@@ -28,20 +28,12 @@
 
 
 
-
-
-
-
-
-
-
-
 .profile-right {min-width: 77%; max-width: 77%; padding-left: 5px; box-sizing: border-box;}
 .profile-right img {max-width: 100%; border-radius: 9px;}
 .profile-right-username {padding: 5px 0px; font-size: 32px;}
 .profile-right-data_choosing {
     border-radius: 9px;
-    background-color: whitesmoke;
+    background-color: rgb(235, 235, 235);
     padding: 10px 15px;
 }
 .profile-right-data_choosing a {color: inherit;}
@@ -61,7 +53,7 @@
 
 .profile-right-favorite-anime-wrapper {
     border-radius: 9px;
-    background-color: whitesmoke;
+    background-color: rgb(235, 235, 235);
     padding: 10px;
     margin-top: 10px;
     width: 100%;
@@ -80,10 +72,18 @@
 .profile-right-favorite-anime-wrapper-entry:last-child {margin-right: 0px!important;}
 .activity-wrapper {display: flex; flex-wrap: wrap; justify-content: space-between;}
 .activity-wrapper-entry {
-    background-color: whitesmoke;
+    background-color: rgb(235, 235, 235);
     border-radius: 9px;
     min-width: 49.25%;
     max-width: 49.25%;
     height: 100px;
     margin-top: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
 }
+.activity-wrapper-entry-pfp {
+    min-width: 15%;
+    max-width: 15%;
+}
+.activity-wrapper-entry-pfp img {border-radius: 100%;}
