@@ -79,11 +79,18 @@
     height: 100px;
     margin-top: 10px;
     padding: 10px;
+    font-size: 14px;
     box-sizing: border-box;
     display: flex;
 }
 .activity-wrapper-entry-pfp {
     min-width: 15%;
     max-width: 15%;
+    margin-right: 10px;
 }
 .activity-wrapper-entry-pfp img {border-radius: 100%;}
+.activity-wrapper-entry-content-firstrow {color:rgb(85, 85, 85); margin-bottom: 5px;}
+#activity-wrapper-username {font-weight: bold; color: black;}
+.activity-wrapper-entry-content-secondrow {font-size: 14px; overflow: hidden; text-overflow: ellipsis; white-space: wrap;}
+.activity-wrapper-settings {float: right; color: rgb(85, 85, 85); display: flex; align-items: center;}
+.activity-wrapper-settings span {margin-bottom: 5px;}
