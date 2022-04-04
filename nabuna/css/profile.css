@@ -94,3 +94,5 @@
 .activity-wrapper-entry-content-secondrow {font-size: 14px; overflow: hidden; text-overflow: ellipsis; white-space: wrap;}
 .activity-wrapper-settings {float: right; color: rgb(85, 85, 85); display: flex; align-items: center;}
 .activity-wrapper-settings span {margin-bottom: 5px;}
+.activity-wrapper-entry-content-thirdrow {}
+.activity-wrapper-entry-content-thirdrow span {font-size: 16px; color:rgb(85, 85, 85);}

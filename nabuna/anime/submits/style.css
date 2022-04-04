@@ -1,0 +1,66 @@
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+a {color: inherit;}
+
+.anime-wrapper-info-submits {margin-top: 10px; font-size: 14px;}
+.anime-wrapper-info-submits h1 {font-size: 24px;}
+.anime-wrapper-info-submits-firstrow {
+    background-color: rgb(235, 235, 235);
+    border-radius: 9px;
+    padding: 5px 15px;
+    margin-top: 10px;
+}
+.anime-wrapper-info-submits-firstrow ul {display: flex; justify-content: space-around; color: rgb(85, 85, 85)}
+.anime-wrapper-info-submits-firstrow li {transition: .1s; cursor: pointer;}
+.anime-wrapper-info-submits-firstrow li:hover {color: black;}
+.anime-wrapper-info-submits-firstrow-title {color: black;}
+.anime-wrapper-info-submits-firstrow-characters {color: black;}
+.anime-wrapper-info-submits-firstrow-staff {color: black;}
+.anime-wrapper-info-submits-firstrow-relatedto {color: black;}
+.anime-wrapper-info-submits-firstrow-reviews {color: black;}
+.anime-wrapper-info-submits-firstrow-additionalinfo {color: black;}
+
+.anime-wrapper-info-submits-content {
+    background-color: rgb(235, 235, 235);
+    border-radius: 9px;
+    padding: 10px 15px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.title-form {width: 650px; margin-top: -10px; display: flex;justify-content: space-between; align-items: center;flex-wrap: wrap;}
+.label-input { margin-top: 10px; display: flex; flex-direction: column; align-items: center; margin-bottom: 10px;}
+.input-form {
+    background-color: rgb(211, 208, 208);
+    border:none;
+    padding: 10px 10px;
+    border-radius: 9px;
+    margin-top: 5px;
+}
+.button-row {display: flex; justify-content: center; margin-top: 15px}
+.button-row button {
+    background-color: rgb(211, 208, 208);
+    color: black;
+    border-radius: 9px;
+    padding: 5px 15px;
+    transition: .1s;
+}
+.button-row button:hover {
+    background-color: rgb(194, 194, 194);
+}
+
+.character {
+    justify-content: space-around;
+}
+.rol {text-align: left; margin-top: 10px; display: flex; flex-direction: column; align-items: center}
+.relatedto-text-area {display: flex; flex-direction: column; text-align: center;}
+.relatedto-text-area label {margin-bottom: 10px; color: rgb(85, 85, 85)}
+#select_position {margin-top: 10px;}

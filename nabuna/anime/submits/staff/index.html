@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="https://storage.googleapis.com/non-spec-apps/mio-icons/latest/outline.css">
+    <link rel="icon" href="../../img/ico/punpunico.png">
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../../../css/animanga.css">
+    <title>Anime · Ikanaide</title>
+</head>
+<body>
+    <script>0</script>
+    <div class="container">
+    <div class="body-container">
+
+
+        <header>
+            <div class="inner-header">
+                <span class="header-logo"><a href="/">ikanaide</a></span>
+                <div class="header-list">
+                    <ul>
+                        <a href="../../../home"><li>home</li></a>
+                        <a href="../../../anime"><li>anime</li></a>
+                        <a href="../../../manga"><li>manga</li></a>
+                        <a href="../../../rankings"><li>rankings</li></a>
+                        <a href="../../../community"><li>community</li></a>
+                    </ul>
+                </div>
+                <div class="header-account">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 24 24"><path d="M23.809 21.646l-6.205-6.205c1.167-1.605 1.857-3.579 1.857-5.711 0-5.365-4.365-9.73-9.731-9.73-5.365 0-9.73 4.365-9.73 9.73 0 5.366 4.365 9.73 9.73 9.73 2.034 0 3.923-.627 5.487-1.698l6.238 6.238 2.354-2.354zm-20.955-11.916c0-3.792 3.085-6.877 6.877-6.877s6.877 3.085 6.877 6.877-3.085 6.877-6.877 6.877c-3.793 0-6.877-3.085-6.877-6.877z"/></svg>
+                    <img src="../../../hanabi.jpg" id="butHeaderDropdown" onclick="pdToggle();">
+
+                    <div class="header-dropdown" id="headerDropdown">
+                        <ul>
+                            <a href="../../../index.html"><li><span class="material-icons">account_circle</span>profile</li></a>
+                            <li><span class="material-icons">people</span>friends</li>
+                            <li><span class="material-icons">settings</span>settings</li>
+                            <li><span class="material-icons">favorite</span>donate</li>
+                        </ul>
+                    </div>
+
+                    <script language="JavaScript">
+
+                        let profileDropdown = document.getElementById('headerDropdown');
+                        let butProfileDropdown = document.getElementById('butHeaderDropdown');
+
+                        pdToggle(); //so 2 clicks aren't needed
+
+                        function pdToggle() {
+                        
+                            if (profileDropdown.style.display === "none") {
+                                profileDropdown.style.display = "block"; 
+                            } else {
+                                profileDropdown.style.display = "none";
+                            }
+                        };
+            
+                    </script>
+
+                </div>
+            </div>
+        </header>
+
+        <section class="anime">
+            <section class="anime-wrapper">
+                <section class="anime-wrapper-content">
+                    <a href="../../../anime"><img src="../../../img/gintama.webp" class="anime-wrapper-content-img"></a>
+                    <div class="add-to-favs add-to-list">favourite</div>
+                    <div class="add-to-list">add to list</div>
+
+                    <div class="anime-wrapper-content-score-wrapper">
+                        <div class="anime-wrapper-content-score">
+                            <span class="anime-wrapper-content-score-text">score</span>
+                            <span class="anime-score">9.24</span>
+                        </div>
+                        <div class="anime-wrapper-content-score">
+                            <span class="anime-wrapper-content-score-text">ranking</span>
+                            <span class="anime-score">#234</span>
+                        </div>
+                    </div>
+                    
+                    <div class="anime-wrapper-content_info">
+                        <div class="anime-wrapper-content_info-row">
+                            type <span>TV</span>
+                        </div>
+                        <div class="anime-wrapper-content_info-row">
+                            episodes <span>49</span>
+                        </div>
+                        <div class="anime-wrapper-content_info-row">
+                            status <span>finished</span>
+                        </div>
+                        <div class="anime-wrapper-content_info-row">
+                            start date <span>apr 4, 2011</span>
+                        </div>
+                        <div class="anime-wrapper-content_info-row">
+                            end date <span>mar 26, 2012</span>
+                        </div>
+                        <div class="anime-wrapper-content_info-row">
+                            premiered <span>spring 2011</span>
+                        </div>
+                        <div class="anime-wrapper-content_info-row">
+                            studios <span>Sunrise</span>
+                        </div>
+                    </div>
+
+                    <div class="anime-wrapper-content_info">
+                        <div class="anime-wrapper-content_info-row">
+                            members <span>21.629</span>
+                        </div>
+                        <div class="anime-wrapper-content_info-row">
+                            favorites <span>482</span>
+                        </div>
+                        <div class="anime-wrapper-content_info-row">
+                            ranked <span>#29</span>
+                        </div>
+                        <div class="anime-wrapper-content_info-row">
+                            popularity <span>#11</span>
+                        </div>
+                    </div>
+
+                    <div class="anime-wrapper-content_info">
+                        <div class="anime-wrapper-content_info-row">
+                            <a href="../../../">friend</a> <span>paused</span>
+                        </div>
+                        <div class="anime-wrapper-content_info-row">
+                            <a href="../../../">friend</a> <span>completed</span>
+                        </div>
+                        <div class="anime-wrapper-content_info-row">
+                            <a href="../../../">friend</a> <span>reading</span>
+                        </div>
+                        <div class="anime-wrapper-content_info-row">
+                            <a href="../../../">friend</a> <span>planning</span>
+                        </div>
+                        <div class="anime-wrapper-content_info-row">
+                            <a href="../../../">friend</a> <span>dropped</span>
+                        </div>
+                    </div>
+
+                    <div class="anime-wrapper-content_info">
+                        <p style="text-align: center;">do you see a mistake? you can edit this website below.</p>
+                        <div class="anime-wrapper-content_info-submit">
+                            <a class="submit" href="submits">submit a change</a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="anime-wrapper-info">
+                    <img src="../../../img/gintama-header-3.jpg" alt="">
+                    <section class="anime-wrapper-info-submits">
+                        <h1>submit a change</h1>
+                        <div class="anime-wrapper-info-submits-firstrow">
+                            <ul>
+                                <a href="../title"><li>title</li></a>
+                                <a href="../characters"><li>characters</li></a>
+                                <a href="../staff"><li class="anime-wrapper-info-submits-firstrow-staff">staff</li></a>
+                                <a href="../related_to"><li>related to</li></a>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="anime-wrapper-info-submits-content">
+                            <form name="form" action="get">
+                                <div class="title-form character">
+                                    <div class="label-input">
+                                        <label for="title">new staff member</label>
+                                        <input class="input-form" type="text" name="staff_member">
+                                    </div>
+                                    <div class="label-input">
+                                        <label for="title">picture</label>
+                                        <input class="input-form" type="file" name="staff_picture" placeholder="Gintama">
+                                    </div>
+                                </div>
+                                <div class="rol">
+                                    <label for="position">what positon this member had?</label>
+                                    <select name="position" id="select_position">
+                                        <option>director</option>
+                                        <option>co-director</option>
+                                        <option>animator</option>
+                                        <option>sound</option>
+                                    </select>
+                                </div>
+                                <div class="button-row">
+                                    <button>submit</button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </section>
+                </section>
+            </section>
+
+    </div>
+
+    <footer>
+        <div class="inner-footer">
+            <div class="footer-links">
+                <ul>
+                    <li>Terms</li>
+                    <li>Privacy</li>
+                    <li>Contact</li>
+                    <li>Donate</li>
+                    <li>Twitter</li>
+                    <li>Logout</li>
+                </ul>
+            </div>
+            <div class="copyright-footer">© Ikanaide All rights reserved.</div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

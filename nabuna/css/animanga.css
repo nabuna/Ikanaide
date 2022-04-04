@@ -32,7 +32,9 @@
     border-radius: 9px;
     margin-top: 10px;
     cursor: pointer;
+    transition: .1s;
 }
+.add-to-list:hover {background-color: rgb(31, 31, 31);}
 .add-to-favs {background-color: #dbc7ff; color: black; transition: .1s;}
 .add-to-favs:hover {background-color: #e3d4ff;}
 .anime-wrapper-content-score-wrapper {display: flex; width: 100%; justify-content: space-between;}
@@ -67,6 +69,20 @@
 .anime-wrapper-content_info a:hover {color: rgb(0, 0, 0);}
 
 .anime-wrapper-content_info span{float: right; font-weight: normal; color: black;}
+.anime-wrapper-content_info-submit {
+    width: 100%;
+    background-color:rgb(209, 209, 209);
+    border-radius: 9px;
+    padding: 4px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 6px;
+    transition: .1s;
+}
+.submit{color: black!important}
+.anime-wrapper-content_info-submit:hover {
+    background-color: rgb(201, 201, 201);
+}
 
 .anime-title {font-size: 32px; padding: 5px 0px 5px;}
 
@@ -181,3 +197,20 @@ div.characters-wrapper-entry-desc-role {
 .reviews-wrapper-entry-user a {color:rgb(85, 85, 85); transition: .1s;}
 .reviews-wrapper-entry-user a:hover {color:rgb(0, 0, 0);}
 .punpun {max-height: 84.51px;}
+
+.additional-info {margin-top: 15px;}
+.additional-info-title {font-weight: bold;}
+.additional-info-content {width: 100%; margin-top: 10px; display: flex; justify-content: space-between;}
+.additional-info-content-wrapper {min-width: 49%; max-width: 49%;}
+.additional-info-content-wrapper-title {
+    margin-bottom: 7px;
+    color:rgb(85, 85, 85);
+    background-color: rgb(235, 235, 235);
+    border-radius: 9px;
+    padding: 3px 15px;
+}
+.additional-info-content iframe {
+    min-width: 100%;
+    min-height: 189px;
+    border-radius: 9px;
+}
