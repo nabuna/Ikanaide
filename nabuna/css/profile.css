@@ -1,17 +1,16 @@
 .profile {max-width: 900px; margin: 0 auto; display: flex; margin-top: 20px;}
 .profile-left {min-width: 23%; max-width: 23%; padding-right: 10px; box-sizing: border-box;}
-.profile-left img {max-width: 100%; border-radius: 9px;}
+.profile-left img {display: block;max-width: 100%; border-radius: 9px;}
 .profile-left-buttons {
     min-width: 100%;
     padding: 8px 0px;
     text-align: center;
-    margin-top: 10px;
     border-radius: 9px;
     cursor: pointer;
 }
 .add {background-color: #dbc7ff; color: black; transition: .1s;}
 .add:hover {background-color: #e3d4ff;}
-.message {background-color: black; color: white; transition: .1s;}
+.message {margin-top: 10px; background-color: black; color: white; transition: .1s;}
 .message:hover {background-color: rgb(31, 31, 31);}
 .profile-left-wrapper {
     background-color: rgb(235, 235, 235);
@@ -29,8 +28,8 @@
 
 
 .profile-right {min-width: 77%; max-width: 77%; padding-left: 5px; box-sizing: border-box;}
-.profile-right img {max-width: 100%; border-radius: 9px;}
-.profile-right-username {padding: 5px 0px; font-size: 32px;}
+.profile-right .profile-header img {display: block; max-width: 100%; border-radius: 9px; margin-bottom: 10px;}
+.profile-right-username {text-align: center; padding: 10px 0px; font-size: 20px;}
 .profile-right-data_choosing {
     border-radius: 9px;
     background-color: rgb(235, 235, 235);
@@ -69,30 +68,51 @@
     align-items: center;
     margin-right: 10px;
 }
+.profile-right-favorite-anime-wrapper-entry img {max-height: 100%; border-radius: 9px;}
 .profile-right-favorite-anime-wrapper-entry:last-child {margin-right: 0px!important;}
-.activity-wrapper {display: flex; flex-wrap: wrap; justify-content: space-between;}
+.activity-wrapper {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+  }
 .activity-wrapper-entry {
     background-color: rgb(235, 235, 235);
     border-radius: 9px;
-    min-width: 49.25%;
-    max-width: 49.25%;
-    height: 100px;
     margin-top: 10px;
     padding: 10px;
     font-size: 14px;
     box-sizing: border-box;
     display: flex;
+    justify-content: space-between;
 }
 .activity-wrapper-entry-pfp {
-    min-width: 15%;
-    max-width: 15%;
-    margin-right: 10px;
+    min-width: 14%;
+    max-width: 14%;
 }
-.activity-wrapper-entry-pfp img {border-radius: 100%;}
-.activity-wrapper-entry-content-firstrow {color:rgb(85, 85, 85); margin-bottom: 5px;}
+.activity-wrapper-entry-pfp img {border-radius: 9px; max-width: 100%;}
+.activity-wrapper-entry-content {min-width: 83%; max-width: 83%;}
+.activity-wrapper-entry-content-firstrow {display: flex; max-width: 100%;color:rgb(85, 85, 85); margin-bottom: 2px;}
+.activity-wrapper-entry-content-firstrow-title {
+    min-width: 90%;
+    max-width: 90%;
+    display: flex;
+    word-wrap: break-word;
+}
+.activity-wrapper-settings {
+    min-width: 10%;
+    max-width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.activity-wrapper-settings svg {height: 17px; fill: rgb(85, 85, 85)}
 #activity-wrapper-username {font-weight: bold; color: black;}
-.activity-wrapper-entry-content-secondrow {font-size: 14px; overflow: hidden; text-overflow: ellipsis; white-space: wrap;}
-.activity-wrapper-settings {float: right; color: rgb(85, 85, 85); display: flex; align-items: center;}
-.activity-wrapper-settings span {margin-bottom: 5px;}
-.activity-wrapper-entry-content-thirdrow {}
-.activity-wrapper-entry-content-thirdrow span {font-size: 16px; color:rgb(85, 85, 85);}
+.activity-wrapper-entry-content-secondrow {min-width: 100%; font-size: 14px; overflow: hidden; text-overflow: ellipsis; white-space: wrap;}
+.activity-wrapper-entry-content-thirdrow {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    display: none;
+}
+.activity-wrapper-entry-content-thirdrow span {font-size: 14px; color:black}
+.activity-wrapper-entry-content-secondrow span {color: rgb(85, 85, 85);}

@@ -15,3 +15,5 @@ otro div a la derecha que si das click al div que contiene el titulo  (no al tit
 
 21-02-2022
 1. hacer de la experencia de usuario en ikanaide un asemejo al crear una cuenta sub en twitter donde hables exclusivamente de anime y manga. la idea es que si quieres hacer algo así, lo hagas en ikanaide y no en twitter.
+
+en los tweets sobre haber visto x cap, poner de fondo el header del anime, como en osu/beatmapsets

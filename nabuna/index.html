@@ -9,6 +9,7 @@
     <link rel="icon" href="img/ico/punpunico.png">
     <link rel="stylesheet" href="css/profile.css">
     <link rel="stylesheet" href="style.css">
+    <script src="themes.js"></script>
     <title>Profile · Ikanaide</title>
 </head>
 <body>
@@ -31,7 +32,7 @@
                 </div>
                 <div class="header-account">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 24 24"><path d="M23.809 21.646l-6.205-6.205c1.167-1.605 1.857-3.579 1.857-5.711 0-5.365-4.365-9.73-9.731-9.73-5.365 0-9.73 4.365-9.73 9.73 0 5.366 4.365 9.73 9.73 9.73 2.034 0 3.923-.627 5.487-1.698l6.238 6.238 2.354-2.354zm-20.955-11.916c0-3.792 3.085-6.877 6.877-6.877s6.877 3.085 6.877 6.877-3.085 6.877-6.877 6.877c-3.793 0-6.877-3.085-6.877-6.877z"/></svg>
-                    <img src="hanabi.jpg" id="butHeaderDropdown" onclick="pdToggle();">
+                    <img src="hanabi.jpg" id="butHeaderDropdown" onclick="pdToggle()">
 
                     <div class="header-dropdown" id="headerDropdown">
                         <ul>
@@ -52,11 +53,13 @@
                         function pdToggle() {
                         
                             if (profileDropdown.style.display === "none") {
-                                profileDropdown.style.display = "block"; 
+                                profileDropdown.style.display = "block";
                             } else {
                                 profileDropdown.style.display = "none";
                             }
                         };
+
+                        
             
                     </script>
 
@@ -67,7 +70,8 @@
         <section class="profile">
 
             <div class="profile-left">
-                <div class="profile-pfp"><img src="img/profile-icon/hanabi1.jpg" alt=""></div>
+                <div class="profile-pfp"><img src="img/profile-icon/nakuru.jpg" alt=""></div>
+                <div class="profile-right-username"><b>nabunafge</b></div>
                 <div class="profile-left-buttons add">add</div>
                 <div class="profile-left-buttons message">message</div>
                 <div class="profile-left-wrapper profile-resume">
@@ -133,11 +137,15 @@
                         <span>jan 01, 1999</span>
                     </div>
                 </div>
+                <div class="themes-wrapper">
+                    <span class="material-icons" id="dark_mode" onclick="darkMode()">dark_mode</span>
+                    <span class="material-icons" id="light_mode" onclick="lightMode()">light_mode</span>
+                </div>
             </div>
 
             <div class="profile-right">
                 <div class="profile-header"><img src="img/profile-icon/header.jpg" alt=""></div>
-                <div class="profile-right-username"><b>user2391</b></div>
+                
                 <div class="profile-right-data_choosing">
                     <ul>
                         <li id="li_overview"  class="li-overview" style="color: black;">overview</li>
@@ -153,12 +161,44 @@
                 </div>
                 <div class="activity-wrapper">
                     <div class="activity-wrapper-entry">
-                        <div class="activity-wrapper-entry-pfp"><img src="../img/profile-icon/kzx.JPG" alt=""></div>
+                        <div class="activity-wrapper-entry-pfp"><img src="img/profile-icon/nakuru.jpg" alt=""></div>
                         <div class="activity-wrapper-entry-content">
-                            <div class="activity-wrapper-entry-content-firstrow"><span id="activity-wrapper-username">user2391</span> &nbsp;·&nbsp; <span id="activity-wrapper-date">mar 23</span><span class="activity-wrapper-settings"><span class="material-icons">more_horiz</span></span></div>
-                            <div class="activity-wrapper-entry-content-secondrow">Watched episode 9 - 10 of Mushoku Tensei: Isekai Ittara Honki Dasu.</div>
-                            <div class="activity-wrapper-entry-content-thirdrow">
-                                <span class="material-icons">favorite_border</span>
+                            <div class="activity-wrapper-entry-content-firstrow">
+                                <div class="activity-wrapper-entry-content-firstrow-title">
+                                    <span id="activity-wrapper-username">nabuna</span>
+                                    &nbsp;&nbsp;·&nbsp;&nbsp; 
+                                    <span id="activity-wrapper-date">mar 23</span>
+                                </div>
+                                <div class="activity-wrapper-settings">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M120 256C120 286.9 94.93 312 64 312C33.07 312 8 286.9 8 256C8 225.1 33.07 200 64 200C94.93 200 120 225.1 120 256zM280 256C280 286.9 254.9 312 224 312C193.1 312 168 286.9 168 256C168 225.1 193.1 200 224 200C254.9 200 280 225.1 280 256zM328 256C328 225.1 353.1 200 384 200C414.9 200 440 225.1 440 256C440 286.9 414.9 312 384 312C353.1 312 328 286.9 328 256z"/></svg>
+                                </div>
+                            </div>
+                            <div class="activity-wrapper-entry-content-wrapper">
+                                <div class="activity-wrapper-entry-content-secondrow">watched episode 9 - 10 of <span class="">Mushoku Tensei: Isekai Ittara Honki Dasu</span>.</div>
+                                <div class="activity-wrapper-entry-content-thirdrow">
+                                    <span class="material-icons">favorite_border</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="activity-wrapper-entry">
+                        <div class="activity-wrapper-entry-pfp"><img src="img/profile-icon/nakuru.jpg" alt=""></div>
+                        <div class="activity-wrapper-entry-content">
+                            <div class="activity-wrapper-entry-content-firstrow">
+                                <div class="activity-wrapper-entry-content-firstrow-title">
+                                    <span id="activity-wrapper-username">nabuna</span>
+                                    &nbsp;&nbsp;·&nbsp;&nbsp; 
+                                    <span id="activity-wrapper-date">mar 23</span>
+                                </div>
+                                <div class="activity-wrapper-settings">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M120 256C120 286.9 94.93 312 64 312C33.07 312 8 286.9 8 256C8 225.1 33.07 200 64 200C94.93 200 120 225.1 120 256zM280 256C280 286.9 254.9 312 224 312C193.1 312 168 286.9 168 256C168 225.1 193.1 200 224 200C254.9 200 280 225.1 280 256zM328 256C328 225.1 353.1 200 384 200C414.9 200 440 225.1 440 256C440 286.9 414.9 312 384 312C353.1 312 328 286.9 328 256z"/></svg>
+                                </div>
+                            </div>
+                            <div class="activity-wrapper-entry-content-wrapper">
+                                <div class="activity-wrapper-entry-content-secondrow">watched episode 9 - 10 of <span class="">Mushoku Tensei: Isekai Ittara Honki Dasu</span>. <br> <br>really liked this episode, the soundtrack was really good.</div>
+                                <div class="activity-wrapper-entry-content-thirdrow">
+                                    <span class="material-icons">favorite_border</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -187,7 +227,9 @@
                     <li>Logout</li>
                 </ul>
             </div>
-            <div class="copyright-footer">© Ikanaide All rights reserved.</div>
+            <div class="copyright-footer">
+                <p>© Ikanaide All rights reserved.</p>
+            </div>
         </div>
     </footer>
 

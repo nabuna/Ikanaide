@@ -109,3 +109,11 @@ div.inner-footer ul {display: flex;}
 div.inner-footer ul li {padding: 5px 10px; transition: .1s; font-weight: bold;}
 div.inner-footer ul li:hover {color: rgb(63, 63, 63); cursor: pointer; transition: .1s;}
 div.copyright-footer {margin-bottom: 3px;}
+.themes-wrapper {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+.themes-wrapper span {margin-left: 15px; color: rgb(63, 63, 63); font-size: 23px; transition: .1s; cursor: pointer}
+.themes-wrapper span:first-child {margin-left: 0px;}
+.themes-wrapper span:hover {color: black;}
